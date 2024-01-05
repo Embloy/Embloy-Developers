@@ -1,0 +1,9 @@
+{
+    "label": "Quicklink",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Everything related to Embloy's Quicklink service."
+    }
+  }
+  

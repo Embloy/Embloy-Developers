@@ -1,0 +1,23 @@
+---
+sidebar_position: 3
+---
+
+# Create client token
+
+## Creating a Client-Token via Embloy Genius
+
+- Simply head over to your [Embloy Genius settings](https://genius.embloy.com/settings) and create a new `client_token`
+
+- The token will be automatically copied to your clipboard and you can paste it into your project's environment file
+
+## Creating a Client-Token manually
+
+> **NOTE**: _You might want to form [Embloy's Postman Collection](https://postman.com/embloy)_  
+
+1. Create a new `access_token` using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-e29e5a54-533b-413a-9e04-b608cc4acd68) and copy it to your clipboard
+
+2. Set `access_token` Postman-variable accordingly
+
+3. Create a new `client_token` using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)
+
+4. Copy paste this `client_token` into your project's environment file
