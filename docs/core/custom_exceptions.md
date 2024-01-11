@@ -52,6 +52,8 @@ You should only expect the following subclasses of ``::InvalidInput``
     + ``::Request`` Related to request tokens
         + ``::Blank`` 
         + ``::Malformed`` 
+    + ``::mode`` Related to the requested application portal mode
+        + ``::Malformed`` 
   ####
 
 ***

@@ -61,14 +61,14 @@ happen.
    ####
    ###### Exceptions
    ```
-   AuthenticationTokenService::InvalidInput
+   CustomExceptions::InvalidInput
    ```
    You should only expect the following subclasses:
     + ``::SUB``: When ``<user_id>`` is malformed
     + ``::CustomEXP``: When ``<man_interval>`` is malformed
    ####    
    ```
-   AuthenticationTokenService::InvalidUser
+   CustomExceptions::InvalidUser
    ```
    You should only expect the following subclasses:
     + ``::Unkown``: When there is no user for ``<user_id>``
@@ -150,7 +150,7 @@ happen.
    ####
    ###### Exceptions
    ```
-   AuthenticationTokenService::InvalidInput
+   CustomExceptions::InvalidInput
    ```
    You should only expect the following subclasses:
     + ``::Token``: When ``<refresh_token>`` is malformed
@@ -194,12 +194,12 @@ happen.
    ####
    ###### Exceptions
    ```
-   AuthenticationTokenService::InvalidInput
+   CustomExceptions::InvalidInput
    ```
    You should only expect the following subclasses:
     + ``::Token``: When ``<access_token>`` is malformed
    ####    
-     ```
+   ```
    JWT
    ```
    You should only expect the following subclasses:
@@ -216,7 +216,7 @@ happen.
 
 1. Claim a client token
     ```   
-    AuthenticationTokenService::Quicklink::Client::Encoder.call(<user_id>)
+    AuthenticationTokenService::Quicklink::Client::Encoder.call(<user_id>, <subscription>, <user_id>, <custom_exp>)
     ```
    This creates a client token for a given user_id.
    ####
@@ -251,12 +251,17 @@ happen.
    ####
    ###### Exceptions
    ```
-   AuthenticationTokenService::InvalidInput
+   CustomExceptions::InvalidInput
    ```
    You should only expect the following subclasses:
-    + ``::Quicklink::Client``: When ``<client_token>`` is malformed
+    + ``::Token``: When ``<access_token>`` is malformed
    ####    
-     ```
+   ```
+   CustomExceptions::Subscription
+   ```
+   + ``::ExpiredOrMissing``: When the ``session[:subscription_type]`` is insufficient for the requested ``session[:mode]``
+   ####    
+   ```
    JWT
    ```
    You should only expect the following subclasses:
@@ -295,7 +300,7 @@ happen.
    ####
    ###### Exceptions
    ```
-   AuthenticationTokenService::InvalidInput
+   CustomExceptions::InvalidInput
    ```
    You should only expect the following subclasses:
     + ``::Quicklink::Client``: When ``<client_token>`` is malformed
@@ -317,22 +322,31 @@ happen.
 
 1. Claim a request token
     ```   
-    AuthenticationTokenService::Quicklink::Request::Encoder.call(<client_token>)
+    AuthenticationTokenService::Quicklink::Request::Encoder.call(<session>)
     ```
-   This creates a request token for a given client token.
+   This creates a request token for a given session.
    ####
    ###### Data parameters
-    1. ``<client_token>`` *<span style={{color:"#dc143c"}}>REQUIRED </span>*
-        + String
-        + ``<client_token>`` must be a JWT, solely issued by the ``QuicklinkService::Quicklink::Client::Encoder`` class
+    1. ``<session>`` *<span style={{color:"#dc143c"}}>REQUIRED </span>*
+        + HashMap
+        + ``<session>`` must be structured as follows:
+          ```JSON
+            "session": {
+              "client_id": 1,
+              "subscription_type": "basic",
+              "mode": "job",
+              "success_url": "myjobpage.com/jobs/2/success",
+              "cancel_url": "myjobpage.com/jobs/2/failure",
+              "job_slug": "job#1"
+            },
+          ```
    ####
    ###### Pipeline
-   First, the inputs are checked for correct formatting. Then ``<client_token>`` gets decoded.
-   Third, ``<client_token>`` and its claims get verified. Finally a request_token is generated based on the claims
-   of ``<client_token>``:
-    + ``sub`` - who owns the token?:``<user_id>``
-    + ``exp`` - when does the token expire?: A client token is valid for 3 months per default or for a custom duration based on ``<exp>``. In both cases, the date has to be before the current subscriptions expiration date.
-    + ``typ`` - specifies the access rights of the token based on ``subscription.tier``
+   First, the inputs are checked for correct formatting. Then ``<session>`` and its content get verified. This includes verification of the request mode and a check of whether the issuer is allowed to make such a request. Finally a request_token is generated based on the claims
+   of ``<session>``:
+    + ``sub`` - who owns the token?:``<client_id>``
+    + ``exp`` - 30 minutes from the time of issue
+    + ``session`` - contains all session data as specified above
     + ``iat`` - specifies the time of when the token has been issued``
     + ``iss`` - who issued the token?: The name of the machine that issues this token
    ####
@@ -342,16 +356,22 @@ happen.
     ``` 
    ####
    ###### Exceptions
-   ```
-   AuthenticationTokenService::InvalidInput
-   ```
-   You should only expect the following subclasses:
+    ```
+    CustomExceptions::Subscription
+    ```
+    + ``::ExpiredOrMissing``: When the ``session[:subscription_type]`` is insufficient for the requested ``session[:mode]``
+    ####    
+    ```
+    CustomExceptions::InvalidInput
+    ```
+    You should only expect the following subclasses:
     + ``::Quicklink::Request``: When ``<client_token>`` is malformed
-   ####    
-     ```
-   JWT
-   ```
-   You should only expect the following subclasses:
+    + ``::Quicklink::Mode``: When ``session[:mode]`` is malformed
+    ####    
+    ```
+    JWT
+    ```
+    You should only expect the following subclasses:
     + ``::ExpiredSignature``: When ``<client_token>`` has expired
     + ``::InvalidIssuerError``: When ``<client_token>`` was issued by an unknown issuer
     + ``::InvalidJtiError``: When ``<client_token>`` has a record on ``AuthBlacklist`` (the token is blocked)
@@ -360,7 +380,7 @@ happen.
     + ``::VerificationError``: When ``<client_token>`` was encoded with an unknown secret key and/or was tampered with
     + ``::IncorrectAlgorithm``: When ``<client_token>`` was encoded using a unknown/incompatible algorithm
     + ``::DecodeError``: When ``<client_token>`` was falsely segmented
-   ####
+    ####
 
 ***
 
@@ -387,7 +407,7 @@ happen.
    ####
    ###### Exceptions
    ```
-   AuthenticationTokenService::InvalidInput
+   CustomExceptions::InvalidInput
    ```
    You should only expect the following subclasses:
     + ``::Quicklink::Request``: When ``<request_token>`` is malformed
