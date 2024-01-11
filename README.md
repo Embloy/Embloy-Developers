@@ -50,14 +50,29 @@ To get started with Docusaurus on Vercel, you can use the [Docusaurus CLI](https
 npx create-docusaurus@latest my-website classic
 ```
 
+## TODOs
+
+-  Core
+- -  Applications
+- - -  Manage Applications
+- - - -  How to Accept Applications
+- - - -  How to Reject Applications
+- - - -  How to Export Applications
+- - - -  How to Report Applications
+- - -  Submit a new application
+- -  Jobs
+- - -  How to create jobs
+- - -  Manage jobs
+- - -  Export jobs
+
 ---
 
 © Carlo Bortolan, Jan Hummel
 
-> Carlo Bortolan &nbsp;&middot;&nbsp;
-> GitHub [@carlobortolan](https://github.com/carlobortolan) &nbsp;&middot;&nbsp;
-> contact via [bortolanoffice@embloy.com](mailto:bortolanoffice@embloy.com)
->
-> Jan Hummel &nbsp;&middot;&nbsp;
-> GitHub [@github4touchdouble](https://github.com/github4touchdouble) &nbsp;&middot;&nbsp;
-> contact via [hummeloffice@embloy.com](mailto:hummeloffice@embloy.com)
+-  Carlo Bortolan &nbsp;&middot;&nbsp;
+-  GitHub [@carlobortolan](https://github.com/carlobortolan) &nbsp;&middot;&nbsp;
+-  contact via [bortolanoffice@embloy.com](mailto:bortolanoffice@embloy.com)
+- 
+-  Jan Hummel &nbsp;&middot;&nbsp;
+-  GitHub [@github4touchdouble](https://github.com/github4touchdouble) &nbsp;&middot;&nbsp;
+-  contact via [hummeloffice@embloy.com](mailto:hummeloffice@embloy.com)

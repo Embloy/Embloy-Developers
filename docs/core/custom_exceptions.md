@@ -72,6 +72,3 @@ You should only expect the following subclasses of ``::Subscription``
 + ``::ExpiredOrMissing``: Subscription is either expired or not existent ``job_id``
   ####
 
-***
-
-### 6. Additional ideas ... 

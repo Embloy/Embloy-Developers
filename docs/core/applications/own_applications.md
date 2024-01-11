@@ -3,3 +3,7 @@ sidebar_position: 2
 ---
 
 # Own applications
+
+You can see applications submitted by you on your main dashboard page. There you can review your application status (_pending_, _accepted_, _rejected_). Once an application is accepted, the job will automatically be moved to the _upcoming jobs_ panel.
+
+If you want to fetch your applications manually, you can use [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-113dd00e-6c6e-42a5-ba20-3291ff75dcaf).

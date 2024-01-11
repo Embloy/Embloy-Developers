@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 3
 ---
 
 # AuthenticationTokenService
@@ -101,7 +101,7 @@ happen.
     ```
    ####
    ###### Exceptions
-   Have a look at the [documentation for custom exceptions](../core/custom_exceptions.md) for more information.
+   Have a look at the [documentation for custom exceptions](../../core/custom_exceptions.md) for more information.
 
    ####    
      ```
@@ -402,6 +402,3 @@ happen.
     + ``::IncorrectAlgorithm``: When ``<request_token>`` was encoded using a unknown/incompatible algorithm
     + ``::DecodeError``: When ``<request_token>`` was falsely segmented
    ####
-
-***
-****
