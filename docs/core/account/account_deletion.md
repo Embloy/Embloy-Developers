@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # Delete Embloy account
 
-> **Warning:** _This is a destructive action and cannot be undone!_
+:::danger
+This is a destructive action and cannot be undone!
+:::
 
 ## Delete Embloy account via web-app
 

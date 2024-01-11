@@ -4,12 +4,15 @@ sidebar_position: 1
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { WebSDKRow, MobileSDKRow } from '@site/src/components';
 
 # Embloy SDKs
 
 Libraries and tools for interacting with your Embloy integration.
 
 ## Server-side SDKs
+
+Embloy's server-side helper libraries (also known as server-side SDKs) reduce the amount of work required to use Embloy’s REST APIs, starting with reducing the boilerplate code you have to write. Below are the installation instructions for these libraries in a variety of popular server-side programming languages.
 
 <Tabs
   defaultValue="ruby"
@@ -60,7 +63,7 @@ pip3 install --upgrade embloy
 # Find the version you want to pin:
 # https://github.com/embloy/embloy-python/blob/master/CHANGELOG.md
 # Specify that version in your requirements.txt file
-embloy>=0.0.1
+embloy>=0.1.0
 ```
 </TabItem>
 
@@ -114,16 +117,31 @@ import (
 
 </Tabs>
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-    {children}
-  </span>
-);
+You can access certain Embloy products and features in the beta stage with beta SDKs. The versions of these beta SDKs have the beta or b suffix, for example, 0.1.0b3 in Python and 0.1.0-beta.3 in other language SDKs. Try these beta SDKs and share feedback with us before the features reach the stable phase. To learn more about how to use the beta SDKs, read the readme file in the GitHub repository of the individual language SDKs.
 
-<!-- <Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors. -->
+## Web SDKs
+
+Embloy provides the following web client SDKs to enable integrations with Embloy Elements, our prebuilt UI components, to create an application form that lets you process an application without getting your hands dirty.
+
+```mdx-code-block
+<WebSDKRow />
+```
+
+## Mobile device SDKs
+
+Our mobile device helper libraries (also known as Mobile device SDKs) help you create native applications for Apple’s and Android’s devices and platforms. The React Native SDK helps you integrate Embloy into iOS and Android applications built with React Native.
+
+```mdx-code-block
+<MobileSDKRow />
+```
+
+## Embloy OpenAPI Specification
+
+Embloy’s OpenAPI specification empowers you with a broad set of developer tooling, starting with Postman collections.
+
+https://www.postman.com/embloy/workspace/embloy-workspace/collection/24977803-e44099dd-6647-4b78-bd7a-03293e47dee5
+
+
+:::tip
+For convenience, we'll remember your choice next time you visit [docusaurus.new](https://docusaurus.new).
+:::

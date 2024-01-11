@@ -12,7 +12,9 @@ sidebar_position: 3
 
 ## Creating a Client-Token manually
 
-> **NOTE**: _You might want to form [Embloy's Postman Collection](https://postman.com/embloy)_  
+:::tip
+You might want to fork [Embloy's Postman Collection](https://postman.com/embloy).
+:::
 
 1. Create a new `access_token` using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-e29e5a54-533b-413a-9e04-b608cc4acd68) and copy it to your clipboard
 

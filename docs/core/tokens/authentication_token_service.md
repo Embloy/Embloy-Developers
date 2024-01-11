@@ -14,8 +14,10 @@ Information on the JWT based authentication approach of the core API.
 The Authentication approach combines the benefits of long-term but weak refresh tokens with short-term, more powerful
 access tokens.
 
-**Note:** The API ist still in a very early alpha version, so changes to the general approach and this document will
-happen.
+:::note
+The API ist still in a very early alpha version, so changes to the general approach and this document will happen.
+:::
+
 ***
 
 ### 2. Refresh token

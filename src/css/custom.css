@@ -24,5 +24,26 @@
     --ifm-color-primary-light: #aaffff;
     --ifm-color-primary-lighter: #bbffff;
     --ifm-color-primary-lightest: #ccffff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+.card-light {
+  background-color: #fff;
+  color: #1d1d1f;
+}
+
+.card-dark {
+  background-color: #1d1d1f;
+  color: #fff;
+}
+
+.card-light .button {
+  background-color: #f6f8fa;
+  color: #393A34;
+}
+
+.card-dark .button {
+  background-color: #282A36;
+  color: #fff;
 }
