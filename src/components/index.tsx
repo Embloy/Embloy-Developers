@@ -46,7 +46,7 @@ const MobileSDKs = [
     ),
   },
   {
-    name: 'Stripe Android SDK',
+    name: 'Embloy Android SDK',
     url: '/docs/sdks/mobile_sdks/android_sdk',
     description: (
       <Translate>
@@ -55,7 +55,7 @@ const MobileSDKs = [
     ),
   },
   {
-    name: 'Stripe React Native SDK',
+    name: 'Embloy React Native SDK',
     url: '/docs/sdks/mobile_sdks/react_native_sdk',
     description: (
       <Translate>
