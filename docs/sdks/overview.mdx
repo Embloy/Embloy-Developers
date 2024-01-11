@@ -1,0 +1,129 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Embloy SDKs
+
+Libraries and tools for interacting with your Embloy integration.
+
+## Server-side SDKs
+
+<Tabs
+  defaultValue="ruby"
+  values={[
+    {label: 'Ruby', value: 'ruby'},
+    {label: 'Python', value: 'python'},
+    {label: 'Java', value: 'java'},
+    {label: 'Node', value: 'node'},
+    {label: 'Go', value: 'go'},
+  ]}>
+
+<TabItem value="ruby">
+```bash title="Command Line"
+# Available as a gem
+sudo gem install embloy
+```
+
+```ruby title="Gemfile"
+# If you use bundler, you can add this line to your Gemfile
+gem 'embloy'
+```
+
+```ruby title="app/controllers/your-controller.rb"
+# Replace 'YOUR_CLIENT_TOKEN' with your actual client token
+session = {
+    mode: "job",
+    job_slug: "job#1",
+    success_url: "mypage.com/success",
+    cancel_url: "mypage.com/failure"
+}
+client = Embloy::Client.new('YOUR_CLIENT_TOKEN', session)
+redirect_url = client.make_request
+redirect_to redirect_url
+```
+</TabItem>
+
+<TabItem value="python">
+```bash title="Command Line"
+# Install through pip
+pip3 install --upgrade embloy
+```
+ 
+```bash title="PyPi"
+# Or find the Embloy package on http://pypi.python.org/pypi/embloy/
+```
+
+```python title="requirements.txt"
+# Find the version you want to pin:
+# https://github.com/embloy/embloy-python/blob/master/CHANGELOG.md
+# Specify that version in your requirements.txt file
+embloy>=0.0.1
+```
+</TabItem>
+
+<TabItem value="java">
+```Java title="build.gradle"
+/*
+  For Gradle, add the following dependency to your build.gradle and replace with
+  the version number you want to use from:
+  - https://mvnrepository.com/artifact/com.embloy/embloy-java or
+  - https://github.com/embloy/embloy-java/releases/latest
+*/
+implementation "com.embloy:embloy-java:24.0.0"
+```
+
+```XML title="pom.xml"
+<!--
+  For Maven, add the following dependency to your POM and replace with the
+  version number you want to use from:
+  - https://mvnrepository.com/artifact/com.embloy/embloy-java or
+  - https://github.com/embloy/embloy-java/releases/latest
+-->
+<dependency>
+  <groupId>com.embloy</groupId>
+  <artifactId>embloy-java</artifactId>
+  <version>24.0.0</version>
+</dependency>
+```
+</TabItem>
+
+<TabItem value="node">
+```bash title="Command Line"
+# Install with npm
+npm install embloy --save
+```
+</TabItem>
+
+<TabItem value="go">
+```bash title="Command Line"
+# Make sure your project is using Go Modules
+go mod init
+# Install embloy-go
+go get -u github.com/embloy/embloy-go/v1
+```
+```Go title="app.go"
+// Then import the package
+import (
+  "github.com/embloy/embloy-go/v1"
+)
+```
+</TabItem>
+
+</Tabs>
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+<!-- <Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors. -->
