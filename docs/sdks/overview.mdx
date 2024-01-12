@@ -52,19 +52,39 @@ redirect_to redirect_url
 <TabItem value="python">
 ```bash title="Command Line"
 # Install through pip
-pip3 install --upgrade embloy
+pip3 install --upgrade embloy_sdk
 ```
  
 ```bash title="PyPi"
-# Or find the Embloy package on http://pypi.python.org/pypi/embloy/
+# Or find the Embloy package on https://pypi.org/project/embloy-sdk/
 ```
 
 ```python title="requirements.txt"
 # Find the version you want to pin:
-# https://github.com/embloy/embloy-python/blob/master/CHANGELOG.md
+# https://pypi.org/project/embloy-sdk/#history
 # Specify that version in your requirements.txt file
-embloy>=0.1.0
+embloy>=0.2.0
 ```
+
+```python title="your-example-service.py"
+from embloy_sdk import EmbloyClient
+
+# Replace with your actual values
+client_token = 'your_client_token'
+session = {
+    'mode': 'job',
+    'success_url': 'your_success_url',
+    'cancel_url': 'your_cancel_url',
+    'job_slug': 'your_job_slug'
+}
+
+# Create an instance of the EmbloyClient
+embloy_client = EmbloyClient(client_token, session)
+
+# Make a request to the Embloy API
+redirect_url = embloy_client.make_request()
+```
+
 </TabItem>
 
 <TabItem value="java">
@@ -96,7 +116,20 @@ implementation "com.embloy:embloy-java:24.0.0"
 <TabItem value="node">
 ```bash title="Command Line"
 # Install with npm
-npm install embloy --save
+npm install embloy
+```
+
+```Javascript title="your-example-service.js"
+const embloy = new EmbloyClient('your-client-token', {
+  mode: "job",
+  job_slug: "job#1",
+  success_url: "mypage.com/success",
+  cancel_url: "mypage.com/failure",
+});
+
+embloy.makeRequest()
+  .then(result => console.log(result))
+  .catch(error => console.error(error.message));
 ```
 </TabItem>
 
@@ -105,13 +138,38 @@ npm install embloy --save
 # Make sure your project is using Go Modules
 go mod init
 # Install embloy-go
-go get -u github.com/embloy/embloy-go/v1
+go get -u github.com/embloy/embloy-go/embloy
 ```
+
 ```Go title="app.go"
 // Then import the package
 import (
-  "github.com/embloy/embloy-go/v1"
+  "github.com/embloy/embloy-go/embloy"
 )
+```
+
+```go title="your-example-service.go"
+import (
+    "fmt"
+    "github.com/embloy/embloy-go/embloy"
+)
+
+func your-example-endpoint() {
+    client := embloy.NewEmbloyClient("your-client-token", map[string]string{
+        "mode":        "job",
+        "success_url": "/success",
+        "cancel_url":  "/failure",
+        "job_slug":    "job#1",
+    })
+
+    response, err := client.MakeRequest()
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+
+    fmt.Println("redirect_url:", response)
+}
 ```
 </TabItem>
 
