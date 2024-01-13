@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Developer@Embloy',
+  title: 'Developers@Embloy',
   tagline: 'Solutions that brain-boost HR',
   url: 'https://embloy.com',
   baseUrl: '/',
@@ -55,10 +55,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Developer@Embloy',
         logo: {
           alt: 'Embloy Logo',
-          src: 'img/logo.svg',
+          src: 'img/developers_logo_on_light.svg',
+          srcDark: 'img/developers_logo_on_dark.svg',
         },
         items: [
           {
@@ -147,7 +147,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Embloy, GbR.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Embloy Platforms GbR.`,
       },
       prism: {
         theme: prismThemes.github,
