@@ -1,6 +1,6 @@
-# Embloy-Developer
+# Embloy-Developers
 
-Source code for Embloy's developer pages and blogs from [developer.embloy.com](https://developer.embloy.com).
+Source code for Embloy's developer pages and blogs from [developers.embloy.com](https://developers.embloy.com).
 
 ## Getting started
 

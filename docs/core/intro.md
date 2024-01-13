@@ -43,6 +43,6 @@ From the job-provider side, most Embloy services can be used for free, but for v
 - **Embloy-Smart: 50.00 EUR/month**
 - **Embloy-Genius** - _coming soon_
 
-Subscriptions are per default on a monthly basis, but can be customized to be dependent on API use. For more information, see the [subscription documentation](https://developer.embloy.com/docs/category/subscriptions). 
+Subscriptions are per default on a monthly basis, but can be customized to be dependent on API use. For more information, see the [subscription documentation](https://developers.embloy.com/docs/category/subscriptions). 
 
 Embloy partners with Stripe for simplified billing.
