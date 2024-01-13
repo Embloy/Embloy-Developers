@@ -24,4 +24,4 @@ You can customize your request tokens to have a custom applications session deta
   },
 ```
 
-To customize it, please refer to the [tutorials](../../tutorial-extras/), the [Embloy example implementations](https://github.com/embloy/embloy-examples) or to [this](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) endpoint documentation.
+To customize it, please refer to the [tutorials](/docs/category/tutorial---extras), the [Embloy example implementations](https://github.com/embloy/embloy-examples) or to [this](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) endpoint documentation.
