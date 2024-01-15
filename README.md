@@ -50,21 +50,6 @@ To get started with Docusaurus on Vercel, you can use the [Docusaurus CLI](https
 npx create-docusaurus@latest my-website classic
 ```
 
-## TODOs
-
--  Core
-- -  Applications
-- - -  Manage Applications
-- - - -  How to Accept Applications
-- - - -  How to Reject Applications
-- - - -  How to Export Applications
-- - - -  How to Report Applications
-- - -  Submit a new application
-- -  Jobs
-- - -  How to create jobs
-- - -  Manage jobs
-- - -  Export jobs
-
 ---
 
 © Carlo Bortolan, Jan Hummel

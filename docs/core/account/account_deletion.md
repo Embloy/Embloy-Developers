@@ -12,7 +12,7 @@ This is a destructive action and cannot be undone!
 
 To delete your account, go to your [account page](https://embloy.com/user/me).
 
-There you should find a "DELETE ACCOUNT" button which deletes all your data related to:
+There, you should find a "DELETE ACCOUNT" button that deletes all your data related to:
 
 - Your user account
 - Reviews written by you

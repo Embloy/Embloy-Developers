@@ -5,15 +5,15 @@ sidebar_position: 6
 # Account blacklisted
 
 
-## What to do if you've been blacklisted?
+## What should you do if you've been blacklisted?
 
 - You should have received an email explaining the reason for which you were banned from our services. In case this didn't happen, please reach out to us using these [customer contact forms](https://about.embloy.com/contact)
 
-- You think it was a bug? Please report it to us using our security features on GitHub (see [here](https://github.com/embloy/security))
+- Do you think it was a bug? Please report it to us using our security features on GitHub (see [here](https://github.com/embloy/security))
 
 ## Next steps
 
-- If you think that you have been blacklisted by mistake and already wrote to our customer suppoert, please wait for a response by our customer. If you did not receive a reply within 14 days, please contact us again. 
+- If you think that you have been blacklisted by mistake and have already written to our customer support, please wait for a response from our customer support. If you do not receive a reply within 14 days, please contact us again. 
 
 ## How to prevent this in the future
 
@@ -21,4 +21,4 @@ Read up on our [community guidelines](https://github.com/embloy/.github/blob/mai
 
 ## Blacklist violation
 
-If we find out that you cretaed new accounts after you have been blacklisted, we are obliged to report you to the responsible authorities.
+If we find out that you created new accounts after you were blacklisted, we are obliged to report you to the responsible authorities.

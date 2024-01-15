@@ -8,7 +8,7 @@ Let's discover **Embloy in less than 5 minutes**.
 
 ## Getting Started
 
-Get started by **[creating a new embloy account](https://embloy.com/sign_up)**.
+Get started by **[creating a new Embloy account](https://embloy.com/sign_up)**.
 
 Or **try Embloy immediately** with **[embloy.new](https://embloy.com/new)**.
 

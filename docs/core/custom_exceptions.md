@@ -12,7 +12,7 @@ You should only expect the following subclasses of ``::InvalidUser``
 
 + ``::Unknown``: When there is no record for a given ``<user_id>``
 + ``::CredentialsWrong``: When the user's credentials are not valid and the authentication process failed
-+ ``::LoggedOut``: > (non-api-only) When the session token is invalid / nil  (``Current.user`` is nil)
++ ``::LoggedOut``: > (non-API-only) When the session token is invalid / nil  (``Current.user`` is nil)
 + ``::Inactive``: ``Current.user`` is deactivated (``activity_status = 0``)
 
 ***
@@ -21,7 +21,7 @@ You should only expect the following subclasses of ``::InvalidUser``
 
 You should only expect the following subclasses of ``::Unauthorized``
 
-+ ``::NotOwner``: ``Current.user`` is not owner of resource that he is trying to access
++ ``::NotOwner``: ``Current.user`` is not the owner of the resource that he is trying to access
 + ``::InsufficientRole``: User does not have the required role to access the resource
     + ``::NotAdmin``
     + ``::NotEditor``
@@ -45,7 +45,7 @@ You should only expect the following subclasses of ``::InvalidInput``
 + ``::GeniusQuery``: Related to genius queries
     + ``::Blank`` 
     + ``::Malformed``
-+ ``::Quicklink``: Related to quicklink
++ ``::Quicklink``: Related to Quicklink
     + ``::Client`` Related to client tokens
         + ``::Blank`` 
         + ``::Malformed`` 
@@ -62,7 +62,7 @@ You should only expect the following subclasses of ``::InvalidInput``
 
 You should only expect the following subclasses of ``::InvalidJob``
 
-+ ``::Unknown``: When there is no record in jobs for a given ``job_id``
++ ``::Unknown``: When there is no record of jobs for a given ``job_id``
   ####
 
 ***

@@ -4,12 +4,12 @@ sidebar_position: 3
 
 # See incoming applications
 
-You have different options of viewing incoming applications.
+You have different options for viewing incoming applications.
 
 ### Incoming applications using Embloy
 
 You can see incoming applications on your news panel as well as when clicking on _your jobs_ and then on _applications_.
-If you want to receive notifications you can enable email notifications in your job's setting or subscribe to your job's RSS feed.
+If you want to receive notifications, you can enable email notifications in your job's settings or subscribe to your job's RSS feed.
 
 ### Incoming applications using external tools
 

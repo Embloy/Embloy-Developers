@@ -12,7 +12,7 @@ See what each subscription tier has to offer.
 - Apply to as many jobs as you want
 - Upload CVs, extra documents, etc.
 - Share open job positions
-- Create 3 job postings
+- Create three job postings
 - No ads
 
 ## _Embloy-Smart_

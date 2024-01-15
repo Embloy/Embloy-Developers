@@ -15,7 +15,7 @@ The Authentication approach combines the benefits of long-term but weak refresh 
 access tokens.
 
 :::note
-The API ist still in a very early alpha version, so changes to the general approach and this document will happen.
+The API is still in a very early alpha version, so changes to the general approach and this document will happen.
 :::
 
 ***
@@ -53,8 +53,8 @@ The API ist still in a very early alpha version, so changes to the general appro
       either set to the 0.5 hours or the 336 hours/2 weeks - what ever is closer to ``<man_interval>``
     + ``jti`` - a unique identifier: A MD5 encoded, unique String
     + ``iss`` - who issued the token?: The name of the machine that issues this token
-      The claims get wrapped in a hash (payload) and this hash is given to teh JWT.encode method, which encodes the
-      claims ito a JWT token using the HS256 algorithm and a secret key.
+      The claims get wrapped in a hash (payload) and this hash is given to the JWT.encode method, which encodes the
+      claims into a JWT token using the HS256 algorithm and a secret key.
    ####
    ###### Return
     ```   
@@ -234,7 +234,7 @@ The API ist still in a very early alpha version, so changes to the general appro
         + ``<subscription>`` must be a valid subscription
     3. ``<custom_exp>`` *<span style={{color:"#808080"}}>OPTIONAL </span>*
         + Date
-        + ``<custom_exp>`` Describes a custom expiriation date and must be in the future. If it exceeds the subscriptions expiration date, the earlier of the two will be used instead.
+        + ``<custom_exp>`` Describes a custom expiration date and must be in the future. If it exceeds the subscription's expiration date, the earlier of the two will be used instead.
 
    ####
    ###### Pipeline
