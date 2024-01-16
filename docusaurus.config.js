@@ -67,7 +67,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/embloy/embloy-examples#embloy-examples', 
               label: 'Examples', 
@@ -132,10 +132,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+              /*{
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/embloy',

@@ -333,14 +333,34 @@ The API is still in a very early alpha version, so changes to the general approa
         + HashMap
         + ``<session>`` must be structured as follows:
           ```JSON
-            "session": {
-              "client_id": 1,
-              "subscription_type": "basic",
-              "mode": "job",
-              "success_url": "myjobpage.com/jobs/2/success",
-              "cancel_url": "myjobpage.com/jobs/2/failure",
-              "job_slug": "job#1"
-            },
+          "session": {
+            "mode": "job",
+            "success_url": "/success",
+            "cancel_url": "/failure",
+            "job_slug": "job#3",
+            "title": "TestTitle",
+            "description": "<div>This is the description</div>",
+            "start_slot": "2024-01-16T04:10:09.463Z",
+            "longitude": "11.613942994844358",
+            "latitude": "48.1951076",
+            "job_type": "Retail",
+            "status": "public",
+            "position": "CEO",
+            "currency": "EUR",
+            "salary": "9",
+            "key_skills": "Entrepreneurship",
+            "duration": "9",
+            "job_notifications": "1",
+            "cv_required": "true",
+            "allowed_cv_formats": [
+              ".pdf",
+              ".docx",
+              ".txt",
+              ".xml"
+            ],
+            "user_id": 1,
+            "subscription_type": "premium"
+          }
           ```
    ####
    ###### Pipeline
