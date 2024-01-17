@@ -11,7 +11,6 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
-import Heading from '@theme/Heading';
 import {useColorMode} from '@docusaurus/theme-common'; // Import the hook
 
 const WebSDKs = [
@@ -80,7 +79,7 @@ function SDKCard({name, url, description}: Props) {
     <div className={clsx('col col--4 margin-bottom--lg', cardClass)}> {/* Apply a class based on the color mode */}
       <Link className="button button--secondary" to={url}>
         <div className="card__body">
-          <Heading as="h3">{name}</Heading>
+          <h3>{name}</h3>
           <p>{description}</p>
         </div>
       </Link>

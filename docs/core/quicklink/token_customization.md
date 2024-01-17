@@ -22,6 +22,12 @@ If you didn't create a custom job, you can customize the request token to have c
 
 If you didn't create a custom job and left all request token fields empty (besides `job_slug`), Embloy automatically creates an empty job linked to your account. which users can then apply for.
 
+:::info
+To customize it, please refer to the [tutorials](/docs/category/tutorial---extras), the [Embloy example implementations](https://github.com/embloy/embloy-examples), or [this](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) endpoint documentation.
+:::
+
+### Example session configuration
+
 You can customize your request tokens to have custom application session details, such as:
 ```JSON
   "session": {
@@ -52,4 +58,27 @@ You can customize your request tokens to have custom application session details
 }
 ```
 
-To customize it, please refer to the [tutorials](/docs/category/tutorial---extras), the [Embloy example implementations](https://github.com/embloy/embloy-examples), or [this](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) endpoint documentation.
+### Session values
+
+| Field                 | Allowed Values                    | Default Value                                 |
+|-----------------------|-----------------------------------|-----------------------------------------------|
+| `mode`                | "job", "qr"                       | "job"                                         |
+| `success_url`         | Any valid URL                     | the referrer's URL                            |
+| `cancel_url`          | Any valid URL                     | the referrer's URL                            |
+| `job_slug`            | Any string                        | "\<user_id\>\_\<title\>\_\<current_datetime\>"|
+| `title`               | Any string                        | N/A                                           |
+| `description`         | Any string                        | N/A                                           |
+| `start_slot`          | Any valid ISO 8601 date string    | N/A                                           |
+| `longitude`           | Any valid longitude               | 0.0                                           |
+| `latitude`            | Any valid latitude                | 0.0                                           |
+| `job_type`            | "Retail", "other types..."        | N/A                                           |
+| `status`              | "public", "private"               | "public"                                      |
+| `position`            | Any string                        | N/A                                           |
+| `currency`            | "EUR", "USD", "CHF"               | "EUR"                                         |
+| `salary`              | Any valid number                  | N/A                                           |
+| `key_skills`          | Any string                        | N/A                                           |
+| `duration`            | Any valid number                  | 1                                             |
+| `job_notifications`   | "0", "1"                          | "1"                                           |
+| `cv_required`         | "true", "false"                   | "false"                                       |
+| `allowed_cv_formats`  | [".pdf", ".docx", ".txt", ".xml"] | [".pdf", ".docx", ".txt", ".xml"]             |
+
