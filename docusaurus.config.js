@@ -106,26 +106,22 @@ const config = {
                 label: 'Genius',
                 to: '/docs/category/genius',
               },
-              {
-                label: 'Postman API collection',
-                href: 'https://documenter.getpostman.com/view/24977803/2s9YRB2rkE',
-              },
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/embloy',
-              },
-              {
                 label: 'Postman',
                 href: 'https://postman.com/embloy',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/embloy',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/embloy',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
@@ -133,16 +129,16 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/embloy',
               },
               {
                 label: 'About',
                 href: 'https://about.embloy.com',
+              },
+              {
+                label: 'Postman API collection',
+                href: 'https://documenter.getpostman.com/view/24977803/2s9YRB2rkE',
               },
             ],
           },
