@@ -8,14 +8,11 @@ You have just learned the **basics of Embloy** and made some changes to the **in
 
 Embloy has **much more to offer**!
 
-Have **5 more minutes**? Take a look at the **[in-depth tutorial](../tutorial-extras/introduction.md)**.
+<!-- Have **5 more minutes**? Take a look at the **[in-depth tutorial](../tutorial-extras/introduction.md)**. -->
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/embloy/embloy-developers)
 
 ## What's next?
 
-- Read the [official documentation](https://docusaurus.io/).
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+- Read the [official documentation](https://developers.embloy.com/docs/sdks/overview/).
+- Get involved in the [Embloy Community](https://about.embloy.com/)

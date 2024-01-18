@@ -23,7 +23,7 @@ If you didn't create a custom job, you can customize the request token to have c
 If you didn't create a custom job and left all request token fields empty (besides `job_slug`), Embloy automatically creates an empty job linked to your account. which users can then apply for.
 
 :::info
-To customize it, please refer to the [tutorials](/docs/category/tutorial---extras), the [Embloy example implementations](https://github.com/embloy/embloy-examples), or [this](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) endpoint documentation.
+To customize it, please refer to the [tutorials](/docs/category/tutorial---basics), the [Embloy example implementations](https://github.com/embloy/embloy-examples), or [this](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) endpoint documentation.
 :::
 
 ### Example session configuration

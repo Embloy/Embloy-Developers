@@ -10,7 +10,7 @@ Let's discover **Embloy in less than 5 minutes**.
 
 Get started by **[creating a new Embloy account](https://embloy.com/sign_up)**.
 
-Or **try Embloy immediately** with **[embloy.new](https://embloy.com/new)**.
+<!-- Or **try Embloy immediately** with **[embloy.new](https://embloy.com/new)**. -->
 
 ### What you'll need
 
@@ -33,15 +33,23 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 The command also installs all necessary dependencies you need to run Embloy.
 
+:::note
+_The classic template does not work yet. Instead, you will have to clone the following repository and install the dependencies using:_
+```bash
+git clone https://github.com/Embloy/Create-Embloy.git
+npm i
+```
+:::
+
 ## Start your site
 
 Run the development server:
 
 ```bash
-cd my-website
-npm run start
+cd Create-Embloy
+npm run dev
 ```
 
 The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+The `npm run dev` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
