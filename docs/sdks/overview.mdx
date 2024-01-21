@@ -153,16 +153,19 @@ public class ExampleClass {
 npm install embloy
 ```
 
-```Javascript title="your-example-service.js"
-const embloy = new EmbloyClient('your-client-token', {
+```Typescript title="your-example-service.ts"
+import { EmbloyClient, EmbloySession } from 'embloy';
+
+const session = new EmbloySession({
   mode: "job",
   job_slug: "job#1",
   success_url: "mypage.com/success",
   cancel_url: "mypage.com/failure",
 });
+const embloy = new EmbloyClient(clientToken, session);
 
 embloy.makeRequest()
-  .then(result => console.log(result))
+  .then(result => window.location.href = result)
   .catch(error => console.error(error.message));
 ```
 </TabItem>

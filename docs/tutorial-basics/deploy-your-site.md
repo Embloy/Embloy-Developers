@@ -14,16 +14,16 @@ Build your site **for production**:
 npm run build
 ```
 
-The static files are generated in the `build` folder.
+The static files are generated in the `.next` folder.
 
 ## Deploy your site
 
 Test your production build locally:
-5
+
 ```bash
-npm run serve
+npm run start
 ```
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+The `.next` folder is now served at [http://localhost:3000/](http://localhost:3000/).
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost.
+You can now deploy the `.next` folder **almost anywhere** easily, **for free** or very small cost.
