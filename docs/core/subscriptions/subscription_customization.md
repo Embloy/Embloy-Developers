@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Subscription customization
+# Customize subscriptions
 
 This feature is not implemented yet. Fore more information see our [GitHub issues](https://github.com/Embloy/Embloy-Core-Server/issues).
 

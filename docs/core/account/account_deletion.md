@@ -10,7 +10,7 @@ This is a destructive action and cannot be undone!
 
 ## Delete Embloy account via web-app
 
-To delete your account, go to your [account page](https://embloy.com/user/me).
+To delete your account, go to the bottom of the [settings page](https://embloy.com/dashboard/settings).
 
 There, you should find a "DELETE ACCOUNT" button that deletes all your data related to:
 

@@ -8,7 +8,7 @@ Decide how to be seen by your employers and applicants.
 
 ## Updating account information
 
-You can customize your profile's information by checking out the settings page or by using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-a962de05-cf83-4c29-8495-1bdacf06454d).
+You can customize your profile's information by checking out [the settings page](https://embloy.com/dashboard/settings) or by using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-a962de05-cf83-4c29-8495-1bdacf06454d).
 
 ## Personal details
 

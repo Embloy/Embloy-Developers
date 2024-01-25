@@ -9,7 +9,11 @@ _You're one small step away from using Embloy!_
 ## Create a new Embloy account via the web-app
 
 Users can set up an account with their email address and password, or choose to log in using the OAuth2.0 services
-provided by Google and GitHub. 
+provided by Google and GitHub and soon LinkedIn and Microsoft (see [embloy.com/register](https://embloy.com/register)). 
+
+:::info
+When creating an account or logging in using OAuth2.0, the account is automatically linked to your profile.
+:::
 
 Passwords are instantly hashed using [bcryt](https://en.wikipedia.org/wiki/Bcrypt) and stored in the database as a
 hash. In case a user forgets their password, it can be reset via standard email authentication.
