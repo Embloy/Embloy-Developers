@@ -14,7 +14,7 @@ Quicklink is Embloy's SDK to allow visitors of your page to submit new applicati
 If you want to integrate Quicklink into your site, you need to be subscribed to at least _Embloy-Smart_ to be able to use this feature. 
 :::
 
-## How can you integrate Quicklink
+## How to integrate Quicklink
 
 
 :::info
@@ -43,6 +43,14 @@ You can use Quicklink without having to manually create a job, just by setting a
 
 5. When the application has been submitted, the **user gets redirected back to your site** (or the `success_url`/`cancel_url` set by you).
 
-## How can you apply using Quicklink
+## How to apply using Quicklink
 
-_Coming soon ..._
+1. Click on "_Apply with Embloy_".
+
+2. Get redirected to embloy.com (If already signed into the account, the user will be shown the appliction widget, otherwise he will have to sign in / register first).
+
+3. Submit application.
+
+4. Get redirected to original page.
+
+5. Keep track of the application on the [application dashboard](https://embloy.com/dashboard/applications).

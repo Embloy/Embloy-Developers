@@ -10,7 +10,7 @@ _All it takes is one click._
 
 > For the employer's perspective, see the [Quicklink documentation](../quicklink/quicklink_application.md) for more details.
 
-> For the applicant's perspective, see this video tutorial: 
+> For the applicant's perspective, see this video tutorial and the [Quicklink documentation](../quicklink/quicklink_application.md): 
 >
 > _Coming soon ..._
 

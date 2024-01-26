@@ -78,9 +78,9 @@ const config = {
             label: 'API', 
             position: 'left'
           },
-          {
-            type: 'docsVersionDropdown',
-          },  
+          //{
+          //  type: 'docsVersionDropdown',
+          //},  
           {
             href: 'https://github.com/embloy',
             label: 'GitHub',
