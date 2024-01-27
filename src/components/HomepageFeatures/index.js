@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/v0.svg').default,
+    Svg: require('@site/static/img/embloy_bike.svg').default,
     description: (
       <>
         Seamlessly integrating Embloy into your page and today's social media landscape for unparalleled engagement with job seekers in the 2020s.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Streamline Hiring',
-    Svg: require('@site/static/img/v0-1.svg').default,
+    Svg: require('@site/static/img/embloy_tree.svg').default,
     description: (
       <>
         Eliminate the need for lengthy email and phone exchanges and enjoy the convenience of a single platform, where everything is just one click away.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'End-to-End Recruitment Hosting',
-    Svg: require('@site/static/img/v0-2.svg').default,
+    Svg: require('@site/static/img/embloy_train.svg').default,
     description: (
       <>
         Eliminate the need for lengthy email and phone exchanges and enjoy the convenience of a single platform, where everything is just a click away.      </>
