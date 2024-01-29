@@ -50,10 +50,17 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Join the early birds & be among the first to explore our closed beta by filling out <a target="_blank" rel="noopener noreferrer" href="https://embloy-platforms.involve.me/beta">this form</a>.',
+        backgroundColor: '#99FFFF',
+        textColor: '#191920',
+        isCloseable: true,
+      },
       navbar: {
         logo: {
           alt: 'Embloy Logo',
@@ -84,12 +91,18 @@ const config = {
           {
             href: 'https://github.com/embloy',
             label: 'GitHub',
+            icon: 'Github',
             position: 'right',
           },
         ],
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'Embloy Logo',
+          src: 'img/logo-3.png',
+          href: 'https://github.embloy.com',
+        },
         links: [
           {
             title: 'Docs',
@@ -143,14 +156,47 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Embloy Platforms GbR.`,
+        copyright: `Copyright © ${new Date().getFullYear()} • Embloy Platforms GbR.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['ruby', 'bash', 'python', 'java', 'json'],
       },
-    }),
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },  
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'YOUR_APP_ID',
+        // Public API key: it is safe to commit it
+        apiKey: 'YOUR_SEARCH_API_KEY',
+        indexName: 'YOUR_INDEX_NAME',
+        // Optional: see doc section below
+        contextualSearch: true,
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+        // Optional: Algolia search parameters
+        searchParameters: {},
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+      },
+    }
+  ),
+  scripts: [
+    {
+      src:
+        'https://fonts.googleapis.com/css2?family=lexend&display=swap',
+      async: true,
+    },
+  ],  
 };
 
 module.exports = config;

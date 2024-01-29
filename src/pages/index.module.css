@@ -3,15 +3,47 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  color: white;
-  background-color: #0c0c0c;
+  color: var(--hero-banner-color-dark);
+  background-color: var(--hero-banner-bg-color-dark);
 }
 
+[data-theme='light'] .heroBanner {
+  color: var(--hero-banner-color-light);
+  background-color: var(--hero-banner-bg-color-light);
+}
+
+.heroButton {
+  color: var(--hero-button-color-dark);
+  background: linear-gradient(90deg, #7145bb, #8d62d9);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 2s ease;
+}
+
+.heroButton:hover {
+  color: var(--hero-button-color-dark);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-position: left bottom;
+}
+
+.heroButton:active {
+  transform: scale(0.95);
+}
+
+[data-theme='light'] .heroButton {
+  color: var(--hero-button-color-light);
+  background: linear-gradient(90deg, #99FFFF, #99F7CB);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: none;
+}
 
 @media screen and (max-width: 996px) {
   .heroBanner {

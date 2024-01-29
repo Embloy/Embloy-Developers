@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/embloy_bike.svg').default,
     description: (
       <>
-        Seamlessly integrating Embloy into your page and today's social media landscape for unparalleled engagement with job seekers in the 2020s.
+        Seamlessly integrate Embloy into your page and today's social media landscape for unparalleled engagement with job seekers.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/embloy_train.svg').default,
     description: (
       <>
-        Eliminate the need for lengthy email and phone exchanges and enjoy the convenience of a single platform, where everything is just a click away.      </>
+        Streamline your application pipeline with Embloy. It can be seamlessly integrated into HR systems for efficient application processing.      </>
     ),
   },
 ];
