@@ -49,7 +49,7 @@ _Coming soon ..._
 
 ## Create jobs via the embloy-dashboard
 
-You can create Embloy-Jobs manually using our job-editor which you can find at [embloy.com/dashboard/jobs/new](https://embloy.com/dashboard/jobs/new).
+You can create Embloy-Jobs manually using our job-editor which you can find at [genius.embloy.com/jobs/new](https://genius.embloy.com/jobs/new).
 
 ## Create jobs manually
 
