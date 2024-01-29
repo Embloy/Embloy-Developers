@@ -101,7 +101,7 @@ const config = {
         logo: {
           alt: 'Embloy Logo',
           src: 'img/logo-3.png',
-          href: 'https://github.embloy.com',
+          href: 'https://github.com/embloy',
         },
         links: [
           {
