@@ -54,10 +54,10 @@ npx create-docusaurus@latest my-website classic
 
 © Carlo Bortolan, Jan Hummel
 
--  Carlo Bortolan &nbsp;&middot;&nbsp;
--  GitHub [@carlobortolan](https://github.com/carlobortolan) &nbsp;&middot;&nbsp;
--  contact via [bortolanoffice@embloy.com](mailto:bortolanoffice@embloy.com)
-- 
--  Jan Hummel &nbsp;&middot;&nbsp;
--  GitHub [@github4touchdouble](https://github.com/github4touchdouble) &nbsp;&middot;&nbsp;
--  contact via [hummeloffice@embloy.com](mailto:hummeloffice@embloy.com)
+> Carlo Bortolan &nbsp;&middot;&nbsp;
+> GitHub [@carlobortolan](https://github.com/carlobortolan) &nbsp;&middot;&nbsp;
+> contact via [bortolanoffice@embloy.com](mailto:bortolanoffice@embloy.com)
+>
+> Jan Hummel &nbsp;&middot;&nbsp;
+> GitHub [@github4touchdouble](https://github.com/github4touchdouble) &nbsp;&middot;&nbsp;
+> contact via [hummeloffice@embloy.com](mailto:hummeloffice@embloy.com)
