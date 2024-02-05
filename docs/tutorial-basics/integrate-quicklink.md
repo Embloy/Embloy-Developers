@@ -93,7 +93,7 @@ const handleApplyClick = async () => {
 
 The only thing left is to add a button that calls this action:
 
-```TypeScript title="app/page.tsx"
+```TSX title="app/page.tsx"
 <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
   <button
     onClick={handleApplyClick}
