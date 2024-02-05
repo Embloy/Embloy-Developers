@@ -43,6 +43,8 @@ For any given job, you can create at most 50 application requirements. Allowed a
 | `required`            | true, false                                                                   | true                                               |
 | `options`             | An array of at least 1 and at most 25 strings, with each a maximum length of 50 characters (can only be set for single_choice and multiple_choice) | -                                             |
 
+Answers to these questions have to adhere to the allowed values and cannot be longer than 500 characters for answers to "link" and "text" question types.
+
 ## Import external jobs
 
 _Coming soon ..._
