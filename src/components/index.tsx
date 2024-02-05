@@ -12,6 +12,7 @@ import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import {useColorMode} from '@docusaurus/theme-common'; // Import the hook
+import '../css/custom.css';
 
 const WebSDKs = [
   {
@@ -71,13 +72,9 @@ interface Props {
 }
 
 function SDKCard({name, url, description}: Props) {
-  const { colorMode } = useColorMode(); // Get the current color mode
-
-  const cardClass = colorMode === 'dark' ? 'card-dark' : 'card-light'; // Determine the card class based on the color mode
-
   return (
-    <div className={clsx('col col--4 margin-bottom--lg', cardClass)}> {/* Apply a class based on the color mode */}
-      <Link className="button button--secondary" to={url}>
+    <div className={clsx('col col--4 margin-bottom--lg')}>
+      <Link className="button button--primary" to={url}>
         <div className="card__body">
           <h3>{name}</h3>
           <p>{description}</p>
