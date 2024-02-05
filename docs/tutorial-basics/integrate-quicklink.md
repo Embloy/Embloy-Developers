@@ -68,7 +68,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 Your client needs to call the above endpoint, to redirect to Embloy's application portal:
 
-```TSX title="app/page.tsx
+```TSX title="app/page.tsx"
 const handleApplyClick = async () => {
   setIsLoading(true);
   try {
