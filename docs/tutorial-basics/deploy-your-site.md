@@ -28,6 +28,6 @@ You can now deploy the `.next` folder **almost anywhere** easily, **for free** o
 
 ## Deploy your site
 
-Deploy this example using [Vercel](https://vercel.com).
+Deploy this example using [Vercel](https://vercel.com):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Embloy/Embloy-Examples/tree/main/nextjs-ts&project-name=create-embloy-nextjs-ts&repository-name=create-embloy-nextjs-ts)
