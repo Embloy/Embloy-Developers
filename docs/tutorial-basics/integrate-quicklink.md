@@ -68,6 +68,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 Your client needs to call the above endpoint, to redirect to Embloy's application portal:
 
+:::info
+Optionally, you can set the `job_slug` in line 14 of `app/page.tsx` to one of your own jobs' `job_slug`.
+:::
+
 ```TSX title="app/page.tsx"
 const handleApplyClick = async () => {
   setIsLoading(true);

@@ -19,10 +19,12 @@ Embloy's server-side helper libraries (also known as server-side SDKs) reduce th
   values={[
     {label: 'Ruby', value: 'ruby'},
     {label: 'Python', value: 'python'},
+    {label: 'PHP', value: 'php'},
     {label: 'Java', value: 'java'},
     {label: 'Node', value: 'node'},
     {label: 'Go', value: 'go'},
   ]}>
+<!--    {label: '.NET', value: 'dotnet'},-->
 
 <TabItem value="ruby">
 ```bash title="Command Line"
@@ -83,6 +85,38 @@ embloy_client = EmbloyClient(client_token, session)
 
 # Make a request to the Embloy API
 redirect_url = embloy_client.make_request()
+```
+
+</TabItem>
+
+<TabItem value="php">
+```bash title="Command Line"
+# Install the PHP library with Composer
+composer require embloy/embloy-php:dev-main
+```
+
+```bash title="Source"
+# Or download the source directly: https://github.com/embloy/embloy-php/releases
+```
+
+```php title="ExampleController.php"
+// Create an instance of EmbloySession
+$session = new EmbloySession('mode', $jobSlug, [
+    'success_url' => 'success_url', // Add your success URL here
+    'cancel_url' => 'cancel_url', // Add your cancel URL here
+]);
+
+// Create an instance of EmbloyClient
+$client = new EmbloyClient($clientToken, $session);
+
+try {
+    // Make a request to generate the URL
+    $url = $client->makeRequest();
+    return response()->json(['url' => $url], 302);
+} catch (\Exception $e) {
+    // Handle any errors
+    return response()->json(['error' => $e->getMessage()], 500);
+}
 ```
 
 </TabItem>
@@ -209,11 +243,28 @@ func your-example-endpoint() {
 }
 ```
 </TabItem>
+<!--
+  <TabItem value="dotnet">
+  ```bash title="Command Line"
+  # Install with dotnet
+  dotnet add package Embloy.net
+  dotnet restore
+  ```
+-->
+
+<!--
+
+  ```bash title="Command Line"
+  # Or install with NuGet
+  Install-Package Embloy.net
+  ```
+  </TabItem>
+-->
 
 </Tabs>
 
 :::note
-Please note that all SDKs are currently in the beta phase. While they have been thoroughly tested, we recommend using them with care. The Ruby and Node SDKs, in particular, have undergone extensive field testing and are expected to perform reliably.
+Please note that all SDKs are currently in the beta phase. While they have been thoroughly tested, we recommend using them with care. The Ruby, Python and Node SDKs, in particular, have undergone extensive field testing and are expected to perform reliably.
 :::
 
 You can access certain Embloy products and features in the beta stage with beta SDKs. The versions of these beta SDKs have the beta or b suffix, for example, 0.1.0b3 in Python and 0.1.0-beta.3 in other language SDKs. Try these beta SDKs and share feedback with us before the features reach the stable phase. To learn more about how to use the beta SDKs, read the README file in the GitHub repository of the individual language SDKs.
