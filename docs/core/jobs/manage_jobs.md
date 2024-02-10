@@ -14,19 +14,19 @@ If you want to find all jobs created by you manually, you can use [this endpoint
 
 Jobs have three different visibility status values:
 
-- `Public`
+- `Public`: Accessible by everyone
 
-- `Private`
+- `Private`: Only visible to you and applicants with a request tokens for this job (e.g., when using the "Apply with Embloy" Button on your page)
 
-- `Archived`
+- `Archived`: Only visible to you
 
 :::info
-When creating a job, you can set the visibility. The default visibility is `public`.
+When creating a job, you can set its visibility. The default visibility for jobs created manually is `public`. The default visibility for jobs created automatically via Quicklink is `private` (see [here](./create_jobs.md#automatically-create-jobs-with-quicklink)).
 ::::
 
 ### Job activation and deactivation
 
-Whenever you create a new job, it is automatically activated. In case we notice suspicious activity on your job, or it does not conform to our terms of service, we can deactivate it. If your job is deactivated, this doesn't mean that it is deleted, but only you can still access it and won't be accessible for other users.
+Whenever you create a new job, it is automatically activated. If we notice suspicious activity on your job or if it does not conform to our terms of service, we can deactivate it. If your job is deactivated, this doesn't mean that it is deleted; only you can still access it, and it won't be accessible for other users.
 
 ### Find a specific job
 
@@ -34,7 +34,7 @@ If you want to find a specific job manually, you can use [this endpoint](https:/
 
 ### Update your job
 
-You can update all jobs created by you by clicking on one of your jobs and going to the "edit" page. Generally, you can update all fields (e.g., title, description, address, visibility, ...) besides the job activation- and deactivation status.
+You can update all jobs created by you by clicking on one of your jobs and going to the "edit" page. Generally, you can update all fields (e.g., job_slug, title, description, address, visibility, etc.) besides the job activation- and deactivation status.
 
 If you want to update one of your jobs manually, you can use [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-8917ff93-4b2b-486c-849b-a63e6d2b450e).
 

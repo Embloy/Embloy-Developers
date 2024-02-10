@@ -6,6 +6,10 @@ sidebar_position: 3
 
 "Embloy-Jobs" are jobs created manually on Embloy. For the most part, they are very similar to external jobs managed by Embloy, but they provide some advanced features, such as: 
 
+:::note
+The following features are not yet publicly available.
+:::
+
 ## Search Embloy-Jobs
 
 You can use our easy job search algorithm to query public jobs and find a job matching your interests by typing into the search bar at the top of your Embloy dashboard.

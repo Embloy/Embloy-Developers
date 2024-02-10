@@ -5,7 +5,7 @@ sidebar_position: 1
 # How to create jobs
 
 :::note
-To create jobs, you need to have a valid Embloy subscription. For normal jobs, _Embloy-Free_ is also sufficient.
+To create jobs, you need to have a valid Embloy subscription.
 :::
 
 ## Automatically create jobs with Quicklink
@@ -13,7 +13,7 @@ To create jobs, you need to have a valid Embloy subscription. For normal jobs, _
 If you have your own job page and integrated _Embloy Quicklink_, you don't need to worry about job creation as we automatically create a private (only visible to you and applicants using the "Apply with Embloy" Button on your page) job listing on Embloy which you can access and edit just as usual via the job dashboard.
 
 :::tip
-Our recommendation is to create a custom job on Embloy first and then embedd it into your website using Quicklink. 
+Our recommendation is to create a custom job on Embloy first and then embed it into your website using Quicklink. 
 :::
 
 Read more on this in the [Quicklink documentation](https://developers.embloy.com/docs/core/quicklink/quicklink_application).
@@ -47,11 +47,15 @@ Answers to these questions have to adhere to the allowed values and cannot be lo
 
 ## Import external jobs
 
-_Coming soon ..._
+You can batch-import jobs on the Embloy-Genius [job dashboard](https://genius.embloy.com/recruitment) by clicking on the "upload" icon in the top right corner of the table. Currently, we only support the following formats:
 
-## Create jobs via the embloy-dashboard
+- Embloy Jobs - JSON ([example](https://developers.embloy.com/files/example-embloy-job.json))
 
-You can create Embloy-Jobs manually using our job-editor which you can find at [genius.embloy.com/jobs/new](https://genius.embloy.com/jobs/new).
+- _Coming soon ..._
+
+## Create jobs via the Embloy-dashboard
+
+You can create Embloy-Jobs manually using our job editor which you can find at [genius.embloy.com/jobs/new](https://genius.embloy.com/jobs/new).
 
 ## Create jobs manually
 

@@ -15,3 +15,5 @@ Our SDKs automatically handle requests from _\<your-service\>_ to _api.embloy.co
 ::: 
 
 ![Quicklink activity diagram](./quicklink.png)
+
+You can find a more detailed BPMN2.0 diagram [here](https://developers.embloy.com/files/Quicklink.pdf).

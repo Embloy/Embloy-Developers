@@ -26,7 +26,10 @@ Embloy's server-side helper libraries (also known as server-side SDKs) reduce th
   ]}>
 <!--    {label: '.NET', value: 'dotnet'},-->
 
+<!--------------------------------------------- RUBY SDK ----------------------------------------------->
+
 <TabItem value="ruby">
+
 ```bash title="Command Line"
 # Available as a gem
 sudo gem install embloy
@@ -49,7 +52,10 @@ client = Embloy::Client.new('YOUR_CLIENT_TOKEN', session)
 redirect_url = client.make_request
 redirect_to redirect_url
 ```
+
 </TabItem>
+
+<!--------------------------------------------- PYTHON SDK ----------------------------------------------->
 
 <TabItem value="python">
 ```bash title="Command Line"
@@ -89,7 +95,10 @@ redirect_url = embloy_client.make_request()
 
 </TabItem>
 
+<!--------------------------------------------- PHP SDK ----------------------------------------------->
+
 <TabItem value="php">
+
 ```bash title="Command Line"
 # Install the PHP library with Composer
 composer require embloy/embloy-php:dev-main
@@ -121,7 +130,10 @@ try {
 
 </TabItem>
 
+<!--------------------------------------------- JAVA SDK ----------------------------------------------->
+
 <TabItem value="java">
+
 ```Java title="build.gradle"
 /*
   For Gradle, add the following dependency to your build.gradle and replace with
@@ -181,7 +193,10 @@ public class ExampleClass {
 
 </TabItem>
 
+<!--------------------------------------------- NODE SDK ----------------------------------------------->
+
 <TabItem value="node">
+
 ```bash title="Command Line"
 # Install with npm
 npm install embloy
@@ -202,9 +217,13 @@ embloy.makeRequest()
   .then(result => window.location.href = result)
   .catch(error => console.error(error.message));
 ```
+
 </TabItem>
 
+<!--------------------------------------------- GO SDK ----------------------------------------------->
+
 <TabItem value="go">
+
 ```bash title="Command Line"
 # Make sure your project is using Go Modules
 go mod init
@@ -242,7 +261,11 @@ func your-example-endpoint() {
     fmt.Println("redirect_url:", response)
 }
 ```
+
 </TabItem>
+
+<!--------------------------------------------- DOTNET SDK ----------------------------------------------->
+
 <!--
   <TabItem value="dotnet">
   ```bash title="Command Line"
