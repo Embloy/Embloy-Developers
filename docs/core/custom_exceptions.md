@@ -71,6 +71,8 @@ You should only expect the following subclasses of ``::InvalidJob``
 
 You should only expect the following subclasses of ``::Subscription``
 
-+ ``::ExpiredOrMissing``: Subscription is either expired or not existent ``job_id``
-  ####
++ ``::ExpiredOrMissing``: Subscription is either expired or not existent
++ ``::LimitReached``: You've reached the maximum number of allowed resources for your subscription type
+
+####
 
