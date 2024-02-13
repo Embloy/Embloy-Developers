@@ -45,6 +45,7 @@ You should only expect the following subclasses of ``::InvalidInput``
 + ``::GeniusQuery``: Related to genius queries
     + ``::Blank`` 
     + ``::Malformed``
+    + ``::Removed``
 + ``::Quicklink``: Related to Quicklink
     + ``::Client`` Related to client tokens
         + ``::Blank`` 
@@ -63,6 +64,7 @@ You should only expect the following subclasses of ``::InvalidInput``
 You should only expect the following subclasses of ``::InvalidJob``
 
 + ``::Unknown``: When there is no record of jobs for a given ``job_id``
++ ``::Inactive``: When a job has been deactivated
   ####
 
 ***
