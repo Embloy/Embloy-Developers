@@ -10,7 +10,7 @@ To create jobs, you need to have a valid Embloy subscription.
 
 ## Automatically create jobs with Quicklink
 
-If you have your own job page and integrated _Embloy Quicklink_, you don't need to worry about job creation as we automatically create a private (only visible to you and applicants using the "Apply with Embloy" Button on your page) job listing on Embloy which you can access and edit just as usual via the job dashboard.
+If you have your own job page and integrated _Embloy Quicklink_, you don't need to worry about job creation as we automatically create an unlisted (only visible to you and applicants using the "Apply with Embloy" Button on your page) job listing on Embloy which you can access and edit just as usual via the job dashboard.
 
 :::tip
 Our recommendation is to create a custom job on Embloy first and then embed it into your website using Quicklink. 

@@ -344,7 +344,7 @@ The API is still in a very early alpha version, so changes to the general approa
             "longitude": "11.613942994844358",
             "latitude": "48.1951076",
             "job_type": "Retail",
-            "status": "public",
+            "job_status": "listed",
             "position": "CEO",
             "currency": "EUR",
             "salary": "9",

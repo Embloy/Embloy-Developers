@@ -41,7 +41,7 @@ You can customize your request tokens to have custom application session details
     "longitude": "11.613942994844358",
     "latitude": "48.1951076",
     "job_type": "Retail",
-    "status": "public",
+    "job_status": "listed",
     "position": "CEO",
     "currency": "EUR",
     "salary": "9",
@@ -72,7 +72,7 @@ You can customize your request tokens to have custom application session details
 | `longitude`           | Any valid longitude               | 0.0                                           |
 | `latitude`            | Any valid latitude                | 0.0                                           |
 | `job_type`            | "Retail", "other types..."        | N/A                                           |
-| `status`              | "public", "private"               | "public"                                      |
+| `job_status`              | "listed", "unlisted"               | "archived"                                      |
 | `position`            | Any string                        | N/A                                           |
 | `currency`            | "EUR", "USD", "CHF"               | "EUR"                                         |
 | `salary`              | Any valid number                  | N/A                                           |

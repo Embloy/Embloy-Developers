@@ -14,14 +14,14 @@ If you want to find all jobs created by you manually, you can use [this endpoint
 
 Jobs have three different visibility status values:
 
-- `Public`: Accessible by everyone
+- `Listed`: Public and accessible by everyone
 
-- `Private`: Only visible to you and applicants with a request tokens for this job (e.g., when using the "Apply with Embloy" Button on your page)
+- `Unlisted`: Only visible to you and applicants with a request tokens for this job (e.g., when using the "Apply with Embloy" Button on your page)
 
 - `Archived`: Only visible to you
 
 :::info
-When creating a job, you can set its visibility. The default visibility for jobs created manually is `public`. The default visibility for jobs created automatically via Quicklink is `private` (see [here](./create_jobs.md#automatically-create-jobs-with-quicklink)).
+When creating a job, you can set its visibility. The default visibility for jobs created manually is `listed`. The default visibility for jobs created automatically via Quicklink is `unlisted` (see [here](./create_jobs.md#automatically-create-jobs-with-quicklink)).
 ::::
 
 ### Job activation and deactivation
