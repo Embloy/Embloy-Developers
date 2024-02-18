@@ -14,5 +14,5 @@ Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://
 
 ## What's next?
 
-- Read the [official documentation](https://developers.embloy.com/docs/sdks/overview/).
+- Read the [official documentation](https://developers.embloy.com/docs/sdks/overview/)
 - Get involved in the [Embloy Community](https://about.embloy.com/)
