@@ -77,8 +77,24 @@ For more information, see [this endpoint](https://www.postman.com/embloy/workspa
 
 ## Password-reset token
 
+> Validity: **15 minutes**
+
 If you forgot your password and want to reset it manually, you will need a password-reset token, which is included in the password reset email we sent you.
 
 :::info
 For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-969a3f0a-af9e-4e62-9eb1-a72110864f27) or the [AuthenticationTokenService](../tokens/authentication_token_service.md).
+:::
+
+## Activation token
+
+> Validity: **1 day**
+
+When you create a new account manually (= without using any of the provided OAuth options), you will have to confirm your email before being able to access any Embloy services. An email including the activation token is automatically sent to your account's email-address after account creation.
+
+:::tip
+If you did not activate your account and your activation token has expired, you can request a new activation token [here](https://embloy.com/activation-token). 
+:::
+
+:::info
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-85e5315d-f144-4479-822b-265bb356d0e2) and [this endpoint]().
 :::
