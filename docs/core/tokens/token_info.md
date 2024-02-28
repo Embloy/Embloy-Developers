@@ -96,5 +96,5 @@ If you did not activate your account and your activation token has expired, you 
 :::
 
 :::info
-For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-85e5315d-f144-4479-822b-265bb356d0e2) and [this endpoint]().
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-85e5315d-f144-4479-822b-265bb356d0e2) and [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-75b9eed7-22e0-4978-8693-04926bb0ebf0).
 :::
