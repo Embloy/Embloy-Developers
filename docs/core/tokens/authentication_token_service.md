@@ -15,7 +15,7 @@ The Authentication approach combines the benefits of long-term but weak refresh 
 access tokens.
 
 :::note
-The API is still in a very early alpha version, so changes to the general approach and this document will happen.
+The API is still in a early beta version, so changes to the general approach and this document will happen.
 :::
 
 ***

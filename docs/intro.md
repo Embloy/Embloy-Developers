@@ -6,6 +6,10 @@ sidebar_position: 1
 
 Let's discover **Embloy in less than 5 minutes**.
 
+:::tip
+If you have no idea what Embloy does or why it could be useful for you, take a look at the comparison of different use cases and scenarios [here](./core/service-comparison).
+:::
+
 ## Getting Started
 
 Get started by **[creating a new Embloy account](https://embloy.com/register)**.

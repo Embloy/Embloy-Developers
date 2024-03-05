@@ -20,7 +20,7 @@ hash. In case a user forgets their password, it can be reset via standard email 
 
 For an optimal user experience, it is recommended to fill out the 'Preferences' field under 'My Profile'.
 To log into the application, users can use the aforementioned OAuth2.0 services or enter their password.
-If a user forgets their password, they can reset it by providing their email address and following the specified
+If a user forgets their password, they can reset it by providing their email address [here](https://embloy.com/password-reset) and following the specified
 procedure in the email.
 
 ## Activate account via web-app
@@ -29,6 +29,10 @@ Once an account is created, it needs to be activated by clicking on the activati
 
 That's it. _Welcome to Embloy!_
 
+:::tip
+If your activation link expires, you can request a new one [here](https://embloy.com/activation-token).
+:::
+
 ---
 
 ## Create a new Embloy account manually
@@ -36,6 +40,10 @@ That's it. _Welcome to Embloy!_
 See [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-110d59f7-4ca3-4a6e-9832-be7083b056f3).
 
 
-## Activate account manually
+## Verify account manually
 
 See [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-20ee549b-80c6-4343-baaf-c82e62cd1a7d).
+
+## Activate account manually
+
+See [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-75b9eed7-22e0-4978-8693-04926bb0ebf0).

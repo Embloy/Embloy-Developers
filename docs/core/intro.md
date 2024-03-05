@@ -18,6 +18,10 @@ Much like **PayPal** facilitates electronic money transfers and secure transacti
 - Centralized application management
 - Includes several smart hiring tools and integrations to help you save time when reviewing applications
 
+:::tip
+If you have no idea what Embloy does or why it could be useful for you, take a look at the comparison of different use cases and scenarios [here](./service-comparison).
+:::
+
 ## Who is it for?
 
 Embloy-Core has two use cases:

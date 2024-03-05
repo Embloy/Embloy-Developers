@@ -9,7 +9,11 @@ sidebar_position: 6
 
 - You should have received an email explaining the reason for which you were banned from our services. In case this didn't happen, please reach out to us using these [customer contact forms](https://about.embloy.com/contact)
 
-- Do you think it was a bug? Please report it to us using our security features on GitHub (see [here](https://github.com/embloy/security))
+- Do you think it was a bug? Please report it to us on GitHub (see [here](https://github.com/embloy))
+
+:::important
+Please report sensitive security issues via Embloy's bug-bounty program by writing us an email to feedback@embloy.com rather than GitHub.
+:::
 
 ## Next steps
 

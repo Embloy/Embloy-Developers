@@ -16,4 +16,4 @@ All your profile information is by default private for other Embloy users, besid
 
 ## Upload profile image
 
-Currently, you can upload a profile image, which will be shown to other users using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-1f248aac-ce80-4543-8671-034c8d351188).
+You can upload a profile image, which will be shown to other users in your [profile settings](https://embloy.com/dashboard/settings), or via [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-1f248aac-ce80-4543-8671-034c8d351188).
