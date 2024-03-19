@@ -240,25 +240,30 @@ import (
 
 ```go title="your-example-service.go"
 import (
-    "fmt"
-    "github.com/embloy/embloy-go/embloy"
+  "fmt"
+  "net/http"
+
+  "github.com/gin-gonic/gin"
+  "github.com/embloy/embloy-go/embloy"
 )
 
-func your-example-endpoint() {
+func yourExampleEndpoint(c *gin.Context) {
+    // Call Embloy-Go SDK to get a request_token
     client := embloy.NewEmbloyClient("your-client-token", map[string]string{
         "mode":        "job",
         "job_slug":    "your-job-slug",
         "success_url": "your-success-url",
-        "cancel_url": "your-cancel-url",
+        "cancel_url":  "your-cancel-url",
     })
 
-    response, err := client.MakeRequest()
+    redirectURL, err := client.MakeRequest()
     if err != nil {
         fmt.Println("Error:", err)
         return
     }
 
-    fmt.Println("redirect_url:", response)
+    // Redirect to the Embloy application portal
+    c.Redirect(http.StatusFound, redirectURL)
 }
 ```
 
