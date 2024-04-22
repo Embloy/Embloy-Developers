@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/embloy_bike.svg').default,
     description: (
       <>
-        Seamlessly integrate Embloy into your page and today's social media landscape for unparalleled engagement with job seekers.
+        Integrate Embloy into your page with less than 10 lines of code for unparalleled engagement with job seekers.
       </>
     ),
   },
@@ -26,7 +26,8 @@ const FeatureList = [
     Svg: require('@site/static/img/embloy_train.svg').default,
     description: (
       <>
-        Streamline your application pipeline with Embloy. It can be seamlessly integrated into HR systems for efficient application processing.      </>
+        Boost your application pipeline with Embloy. It can be connected to third party ATS or HR systems for efficient application processing.
+      </>
     ),
   },
 ];
