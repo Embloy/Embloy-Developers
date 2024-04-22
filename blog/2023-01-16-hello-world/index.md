@@ -17,8 +17,7 @@ Embloy is designed to be a universal application gateway that allows everyone to
 
 Now, let's get back to the Docs. Within, you'll find quick-start guides, our SDKs, examples ready for implementation, and a comprehensive guide on how to integrate Embloy with your projects.
 
-The essence of Embloy lies in its continuous evolution. It's not just a product; Embloy's a work in progress that thrives on your input. Expect frequent updates, refinements, and perhaps a few delightful surprises and ~~bugs~~ _features_ along the way.
-
+Expect frequent updates, refinements, and perhaps a few delightful surprises and ~~bugs~~ _features_ along the way.
 Whether you're here to learn more about how Embloy works, contribute your coding skills, or simply enjoy finding _features_...
 
 Happy coding,
