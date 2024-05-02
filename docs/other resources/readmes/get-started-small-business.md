@@ -5,16 +5,16 @@ sidebar_position: 1
 # Getting started - Small Business
 
 :::info
-This guide is for Small and Local Businesses that want to get started with Embloy. If you are a Medium or Large Company, please refer to the <a href="https://developers.embloy.com/docs/other%20resources/readmes/get-started-enterprise" target="_blank">Enterprise guide</a> [Enterprise guide] or contact us directly.
+This guide is for Small and Local Businesses that want to get started with Embloy. If you are a Medium or Large Company, please refer to the <a href="https://developers.embloy.com/docs/other%20resources/readmes/get-started-enterprise">Enterprise guide</a> or contact us directly.
 :::
 
 
 Hey there! 👋 Welcome to Embloy! We are excited to have you on board. This guide will explain every step you need to take to get started with Embloy and make the most out of our platform.
 
 ## Step 1: Create an account
-If you haven't already, you can create an account by visiting our <a href="https://embloy.com/en-US/register" target="_blank">Sign up</a> page. You can also sign up using your Google, LinkedIn, Microsoft, or GitHub account. 
+If you haven't already, you can create an account by visiting our <a href="https://embloy.com/register" target="_blank">registration</a> page. You can also sign up using your Google, LinkedIn, Microsoft, or GitHub accounts. 
 
-After you have created an account, you will be receiving a confirmation email. Click on the link in the email to verify your account.
+After you have created an account, you will receive a confirmation email. Click on the link in the email to verify your account.
 
 _<a href="https://developers.embloy.com/docs/category/account" target="_blank">More information</a>_
 
@@ -35,7 +35,7 @@ _<a href="https://developers.embloy.com/docs/category/subscriptions" target="_bl
 ## Step 3: Create your first job
 ### Register your job
 :::info
-Currently, we only support job uploads in JSON format. We are working on an in app job editor, if you are interested in testing it, please [let us know](https://embloy.com/en-US/contact).
+Currently, we only support job uploads in JSON format. We are working on an in-app job editor; if you are interested in testing it, please [let us know](https://about.embloy.com/en/contact).
 :::
 - Download our <a href="https://developers.embloy.com/files/embloy-job.json" target="_blank">example job</a>
 - Log into our <a href="https://genius.embloy.com/" target="_blank">recruiter portal</a> and click on the "Add job" button
@@ -56,7 +56,7 @@ _<a href="https://developers.embloy.com/docs/core/jobs/create_jobs" target="_bla
 - Screen the applications and respond to the candidates
 ### Via Email
 - You will receive an email notification every time a candidate applies
-- You can view the application by clicking on the link in the email or follow the instructions above
+- You can view the application by clicking on the link in the email or following the instructions above
 - Screen the applications and respond to the candidates via email
   
 

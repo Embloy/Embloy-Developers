@@ -49,7 +49,7 @@ Answers to these questions have to adhere to the allowed values and cannot be lo
 
 You can batch-import jobs on the Embloy-Genius [job dashboard](https://genius.embloy.com/recruitment) by clicking on the "upload" icon in the top right corner of the table. Currently, we only support the following formats:
 
-- Embloy Jobs - JSON ([example](https://developers.embloy.com/files/example-embloy-job.json))
+- Embloy Jobs - JSON ([example](https://developers.embloy.com/files/embloy-job.json))
 
 - _Coming soon ..._
 
