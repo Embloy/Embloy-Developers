@@ -1,0 +1,8 @@
+{
+  "label": "FAQ",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Detailed answers on frequently asked questions"
+  }
+}
