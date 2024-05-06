@@ -1,43 +1,68 @@
-[
-  {
-    "title": "Organic coffee shop looking for a barista",
-    "job_type": "part_time",
-    "referrer_url": "https://embloy.com/",
-    "start_slot": "2042-04-02T20:42:42.356Z",
-    "position": "Barista",
-    "key_skills": "Barista, Coffee, Customer Service",
-    "duration": 20,
-    "salary": 18,
-    "description": "<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>",
-    "job_status": "listed",
-    "longitude": 11.613942994844358,
-    "latitude": 48.1951076,
-    "job_notifications": 1,
-    "currency": "USD",
-    "cv_required": false,
-    "application_options_attributes": [
-      {
-        "question": "Did you ever work as a barista?",
-        "question_type": "yes_no",
-        "required": true,
-        "options": []
-      },
-      {
-        "question": "If yes, where and for how long?",
-        "question_type": "text",
-        "required": false
-      },
-      {
-        "question": "What is your favorite coffee?",
-        "question_type": "text",
-        "required": true
-      },
-      {
-        "question": "Should Capuccino be served after 11am?",
-        "question_type": "multiple_choice",
-        "required": true,
-        "options": ["No way, it should be illegal", "Yes, but for italians it should remain a crime", "Yes, it's a free world", "Is it 11am already?"]
-      }
-    ]
-  }
-]
+{
+  "title": "Organic coffee shop looking for a barista",
+  "job_type": "part_time",
+  "referrer_url": "https://embloy.com/",
+  "start_slot": "2042-10-02T20:42:42.356Z",
+  "position": "Barista",
+  "key_skills": "Barista, Coffee, Customer Service",
+  "duration": 20,
+  "salary": 18,
+  "description": "<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>",
+  "job_status": "listed",
+  "longitude": 11.613942994844358,
+  "latitude": 48.1951076,
+  "job_notifications": 1,
+  "currency": "USD",
+  "cv_required": true,
+  "allowed_cv_formats": [
+    ".pdf",
+    ".docx",
+    ".txt",
+    ".xml"
+  ],
+  "application_options_attributes": [
+    {
+      "question": "Did you ever work as a barista?",
+      "question_type": "yes_no",
+      "required": true,
+      "options": []
+    },
+    {
+      "question": "If yes, where and for how long?",
+      "question_type": "text",
+      "required": false
+    },
+    {
+      "question": "What is your favorite coffee?",
+      "question_type": "text",
+      "required": true
+    },
+    {
+      "question": "Provide a link to a video of you preparing coffee.",
+      "question_type": "link",
+      "required": false
+    },
+    {
+      "question": "Should Capuccino be served after 11am?",
+      "question_type": "multiple_choice",
+      "required": true,
+      "options": [
+        "No way, it should be illegal",
+        "Yes, but for italians it should remain a crime",
+        "Yes, it's a free world",
+        "Is it 11am already?"
+      ]
+    },
+    {
+      "question": "Are you addicted to coffee?",
+      "question_type": "single_choice",
+      "required": true,
+      "options": [
+        "Yes",
+        "No",
+        "Maybe...",
+        "I can neither confirm nor deny."
+      ]
+    }
+  ]
+}
