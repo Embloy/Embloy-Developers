@@ -28,7 +28,7 @@ Embloy-Core has two use cases:
 
 #### 1. The job provider side
 
-- Easy to integrate within your existing CRM systems and pipelines (optionally also usable as standalone software)
+- Easy to integrate within your existing ATS systems and pipelines (optionally also usable as standalone software)
 - Simplify hiring procedures and increase applications
 - Share job positions more easily on social media platforms
 - Make use of Embloy Genius ranking features to help find the best candidates for the position

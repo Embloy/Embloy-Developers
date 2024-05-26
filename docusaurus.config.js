@@ -39,11 +39,11 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
-        blog: {
+        /*blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-        },
+        },*/
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -74,15 +74,20 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/embloy/embloy-examples#embloy-examples', 
-              label: 'Examples', 
+            label: 'Examples', 
+            position: 'left'
+          },
+          {
+            href: 'https://about.embloy.com', 
+              label: 'Solutions', 
               position: 'left'
           },
           {
-          href: 'https://documenter.getpostman.com/view/24977803/2s9YRB2rkE', 
-            label: 'API', 
+            href: 'https://docs.embloy.com', 
+            label: 'API docs', 
             position: 'left'
           },
           //{
@@ -105,19 +110,57 @@ const config = {
         },
         links: [
           {
-            title: 'Docs',
+            title: 'Learn Embloy',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Quickstart',
                 to: '/docs/intro',
               },
               {
-                label: 'Core',
-                to: '/docs/category/core',
+                label: 'Tutorials',
+                to: '/docs/category/tutorial---basics',
               },
               {
-                label: 'Genius',
-                to: '/docs/category/genius',
+                label: 'Guides',
+                to: '/docs/category/guides',
+              },
+              {
+                label: 'SDKs',
+                to: '/docs/category/sdks',
+              },
+            ],
+          },
+          {
+            title: 'Most Viewed Docs',
+            items: [
+              {
+                label: 'Integrate Quicklink',
+                to: '/docs/category/quicklink',
+              },
+              {
+                label: 'Use Genius-Queries',
+                to: '/docs/core/genius_queries',
+              },
+              {
+                label: 'Create Jobs',
+                to: '/docs/category/jobs',
+              },
+              {
+                label: 'Receive Applications',
+                to: '/docs/category/applications',
+              },
+            ],
+          },
+          {
+            title: 'API Reference',
+            items: [
+              {
+                label: 'API documentation',
+                href: 'https://docs.embloy.com',
+              },
+              {
+                label: 'Postman workspace',
+                href: 'https://www.postman.com/embloy/workspace/embloy-workspace/collection/24977803-e44099dd-6647-4b78-bd7a-03293e47dee5',
               },
             ],
           },
@@ -125,16 +168,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Postman',
-                href: 'https://postman.com/embloy',
+                label: 'GitHub',
+                href: 'https://github.com/embloy',
               },
               {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/company/embloy',
               },
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Postman Team',
+                href: 'https://postman.com/embloy',
+              },
+              {
+                label: 'Code of Coduct',
+                href: 'https://github.com/embloy/.github/blob/main/code-of-conduct.md',
               },
             ],
           },
@@ -142,16 +189,20 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/embloy',
-              },
-              {
                 label: 'About',
                 href: 'https://about.embloy.com',
               },
               {
-                label: 'Postman API collection',
-                href: 'https://documenter.getpostman.com/view/24977803/2s9YRB2rkE',
+                label: 'Privacy',
+                href: 'https://embloy.com/resources/privacy',
+              }, 
+              {
+                label: 'Terms',
+                href: 'https://embloy.com/resources/terms',
+              },
+              {
+                label: 'Blog',
+                href: '/blog',
               },
             ],
           },

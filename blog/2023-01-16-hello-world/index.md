@@ -15,7 +15,7 @@ Embloy is designed to be a universal application gateway that allows everyone to
 
 <!--truncate-->
 
-Now, let's get back to the Docs. Within, you'll find quick-start guides, our SDKs, examples ready for implementation, and a comprehensive guide on how to integrate Embloy with your projects.
+Now, let's get back to the Docs. Within, you'll find a quick [starter guide](/docs/intro), our [SDKs](/docs/sdks/overview), [tutorials](/docs/category/tutorial---basics) with examples ready for implementation, and [comprehensive guides](/docs/category/guides) on how to integrate Embloy with your projects.
 
 Expect frequent updates, refinements, and perhaps a few delightful surprises and ~~bugs~~ _features_ along the way.
 Whether you're here to learn more about how Embloy works, contribute your coding skills, or simply enjoy finding _features_...

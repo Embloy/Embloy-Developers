@@ -7,16 +7,16 @@ sidebar_position: 9
 Determine if Embloy is the right fit for your needs.
 
 :::important
-When comparing different scenarios, remember that Embloy is designed as an Add-On to build on top of your existing systems. However, if you don't have any CRM systems in place, Embloy can also function as a standalone system.
+When comparing different scenarios, remember that Embloy is designed as an add-on to build on top of your existing systems. However, if you don't have any ATS systems in place, Embloy can also function as a standalone system.
 :::
 
 ## Who is it for?
 
 ### Scenario 1:
 
-> _You're a small company with a simple HTML website, a few open job positions, and no CRM tools in place. You accept applications via email or LinkedIn._
+> _You're a small company with a simple HTML website, a few open job positions, and no ATS tools in place. You accept applications via email or LinkedIn._
 
-[**Embloy-Smart**](./subscriptions/subscription_features.md#embloy-smart) is an ideal choice for you. It can be easily integrated with [Genius-Queries](./genius_queries.md), supports up to 50 active job listings, and can function as a standalone CRM system at no extra cost.
+[**Embloy-Smart**](./subscriptions/subscription_features.md#embloy-smart) is an ideal choice for you. It can be easily integrated with [Genius-Queries](./genius_queries.md), supports up to 50 active job listings, and can function as a standalone ATS system at no extra cost.
 
 ### Scenario 2:
 
@@ -28,7 +28,7 @@ When comparing different scenarios, remember that Embloy is designed as an Add-O
 
 > _You're a medium- to large-sized company with a fully integrated and efficient application processing system (e.g., Greenhouse, Successfactors, Workdayjobs, Join, ...) and hundreds of rapidly changing open job positions._
 
-[**Embloy-Genius**](./subscriptions/subscription_features.md#embloy-genius) is ideal for you. It integrates and automates using [Quicklink](./quicklink/quicklink_application.md), supports unlimited active job listings, and can be easily integrated into popular CRM systems using our [SDKs](./../sdks/overview.mdx) and [Embloy Genius](./../genius/intro.md) integration features.
+[**Embloy-Genius**](./subscriptions/subscription_features.md#embloy-genius) is ideal for you. It integrates and automates using [Quicklink](./quicklink/quicklink_application.md), supports unlimited active job listings, and can be easily integrated into popular ATS systems using our [SDKs](./../sdks/overview.mdx) and [Embloy Genius](/docs/guides/get-started-integrations) integration features.
 
 ## Who is it NOT for?
 

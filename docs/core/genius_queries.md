@@ -14,7 +14,7 @@ If you want to use Genius-Queries, you need to be subscribed to at least Embloy-
 
 Genius-Queries are similar to request tokens but offer additional flexibility. Unlike request tokens, which are automatically generated when a user applies via Quicklink and are only valid for a short amount of time, a Genius-Query can be tailored with a custom expiration date and is capable of accessing specific resources (such as a job, account, or application) rather than just jobs.
 
-However, Genius-Queries need to be created manually via your [Genius Dashboard](https://genius.embloy.com/recruiting), or using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-a9d49a6e-249b-446c-8ab5-336f751aff5e). 
+However, Genius-Queries need to be created manually via your [Genius dashboard](https://genius.embloy.com/recruiting), or using [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-a9d49a6e-249b-446c-8ab5-336f751aff5e). 
 
 Genius-Queries can be seen as a permanent link to a resource (e.g., a job), which enables you to integrate Embloy on static pages (e.g., on a plain HTML job page).
 

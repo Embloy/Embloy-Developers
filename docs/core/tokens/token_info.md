@@ -18,7 +18,7 @@ Refresh tokens are weak authentication tokens that have no other purpose than be
 If a refresh token expires, the user has to re-login using his credentials so that a new refresh token is generated.
 
 :::info
-For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-2c38042b-45e7-4de4-8171-ddc3f53a0182) or the [AuthenticationTokenService](../tokens/authentication_token_service.md).
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-2c38042b-45e7-4de4-8171-ddc3f53a0182).
 :::
 
 ## Access token
@@ -28,7 +28,7 @@ For more information, see [this endpoint](https://www.postman.com/embloy/workspa
 Access tokens are used as the main method of authentication for all Embloy services. Access tokens can be generated using a valid refresh token. 
 
 :::info
-For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-e29e5a54-533b-413a-9e04-b608cc4acd68) or the [AuthenticationTokenService](../tokens/authentication_token_service.md).
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-e29e5a54-533b-413a-9e04-b608cc4acd68).
 :::
 
 ## Client token
@@ -42,7 +42,7 @@ Whenever you change your subscription plan, you will have to update your client 
 :::
 
 :::info
-For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4) or the [AuthenticationTokenService](../tokens/authentication_token_service.md).
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4).
 :::
 
 ## Request token
@@ -53,10 +53,10 @@ Request tokens can be generated using a valid client token and act as confirmati
 
 When a request token is generated, it can be used to submit an application for a given job. Every request token saves the owner's ID (=client) and information about the job for which it is used, as well as information related to the requested application session, such as the success_url, cancel_url and more.   
 
-**The only required field to create a request token is `job_slug` which is used to identify a client's job, which is not known to Embloy yet. All other fields are optional and can be used to customize the application process. See also the [token customization documentation](https://developers.embloy.com/docs/core/quicklink/token_customization).**
+**The only required field to create a request token is `job_slug` which is used to identify a client's job, which is not known to Embloy yet. All other fields are optional and can be used to customize the application process. See also the [token customization documentation](/docs/core/quicklink/token_customization).**
 
 :::info
-For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6) or the [AuthenticationTokenService](../tokens/authentication_token_service.md).
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-7629b41f-882f-4897-bacd-5b900378eac6).
 :::
 
 ## Genius-Query token
@@ -82,7 +82,7 @@ For more information, see [this endpoint](https://www.postman.com/embloy/workspa
 If you forgot your password and want to reset it manually, you will need a password-reset token, which is included in the password reset email we sent you.
 
 :::info
-For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-969a3f0a-af9e-4e62-9eb1-a72110864f27) or the [AuthenticationTokenService](../tokens/authentication_token_service.md).
+For more information, see [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-969a3f0a-af9e-4e62-9eb1-a72110864f27).
 :::
 
 ## Activation token

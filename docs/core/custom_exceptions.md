@@ -2,9 +2,13 @@
 sidebar_position: 10
 ---
 
-# CustomExceptions
+# Custom exceptions
 
 Information on Embloy-Core's custom exceptions.
+
+:::note
+This is only relevant if you plan to contribute to any of our SDKs or APIs or plan to develop your own integration.
+:::
 
 ### 1. InvalidUser
 

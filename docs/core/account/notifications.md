@@ -21,6 +21,6 @@ You can manage your notification preferences in your [notification settings](htt
 | Security Emails | Receive alerts about suspicious account activity, such as password changes, logins from new devices, and more | No | Email |
 
 :::note
-Job notifications are per default activated, and can be disabled for a specific job via your [Genius Dashboard](https://genius.embloy.com/recruitment).
+Job notifications are per default activated, and can be disabled for a specific job via your [Genius dashboard](https://genius.embloy.com/recruitment).
 :::
 

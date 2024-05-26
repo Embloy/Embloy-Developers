@@ -1,6 +1,6 @@
 {
     "label": "Core",
-    "position": 5,
+    "position": 2,
     "link": {
       "type": "generated-index",
       "description": "Much like PayPal facilitates electronic money transfers and secure transactions between users and payment networks like Mastercard or Visa, Embloy functions as a middleware/SaaS layer atop existing job platforms such as Greenhouse, WorkDayJobs, or Successfactors. It simplifies and secures the application process, allowing users to apply with a single click directly from the employer's preferred job page."

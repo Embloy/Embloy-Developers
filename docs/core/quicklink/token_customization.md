@@ -12,12 +12,12 @@ You can either use the appropriate feature on the token dashboard or [this endpo
 
 ## Request token customization
 
-Request tokens only require you to set the `job_slug` field. 
+Request tokens only require you to set the `job_slug` field.
 The default value for `mode` is `"job"` and for the `success_url` and `cancel_url` the referrer of the request (e.g., your website).
-If you already created a custom job in Embloy, you can leave all other fields empty, as they will be ignored either way. 
+If you already created a custom job in Embloy, you can leave all other fields empty, as they will be ignored either way.
 
 :::tip
-If you didn't create a custom job, you can customize the request token to have certain values and enable or disable certain features (e.g., requiring the user to submit a CV in a certain file format) by setting the appropriate fields when creating a session. 
+If you didn't create a custom job, you can customize the request token to have certain values and enable or disable certain features (e.g., requiring the user to submit a CV in a certain file format) by setting the appropriate fields when creating a session.
 :::
 
 If you didn't create a custom job and left all request token fields empty (besides `job_slug`), Embloy automatically creates an empty job linked to your account. which users can then apply for.
@@ -29,6 +29,7 @@ To customize it, please refer to the [tutorials](/docs/category/tutorial---basic
 ### Example session configuration
 
 You can customize your request tokens to have custom application session details, such as:
+
 ```JSON
   "session": {
     "mode": "job",
@@ -60,25 +61,28 @@ You can customize your request tokens to have custom application session details
 
 ### Session values
 
-| Field                 | Allowed Values                    | Default Value                                 |
-|-----------------------|-----------------------------------|-----------------------------------------------|
-| `mode`                | "job", "qr"                       | "job"                                         |
-| `success_url`         | Any valid URL                     | the referrer's URL                            |
-| `cancel_url`          | Any valid URL                     | the referrer's URL                            |
-| `job_slug`            | Any string                        | "\<user_id\>\_\<title\>\_\<current_datetime\>"|
-| `title`               | Any string                        | N/A                                           |
-| `description`         | Any string                        | N/A                                           |
-| `start_slot`          | Any valid ISO 8601 date string    | N/A                                           |
-| `longitude`           | Any valid longitude               | 0.0                                           |
-| `latitude`            | Any valid latitude                | 0.0                                           |
-| `job_type`            | "Retail", "other types..."        | N/A                                           |
-| `job_status`              | "listed", "unlisted"               | "archived"                                      |
-| `position`            | Any string                        | N/A                                           |
-| `currency`            | "EUR", "USD", "CHF"               | "EUR"                                         |
-| `salary`              | Any valid number                  | N/A                                           |
-| `key_skills`          | Any string                        | N/A                                           |
-| `duration`            | Any valid number                  | 1                                             |
-| `job_notifications`   | "0", "1"                          | "1"                                           |
-| `cv_required`         | "true", "false"                   | "false"                                       |
-| `allowed_cv_formats`  | [".pdf", ".docx", ".txt", ".xml"] | [".pdf", ".docx", ".txt", ".xml"]             |
+:::note
+For more information on the `mode` and `job_slug` values, see the [guides](/docs/guides/get-started-partners.md).
+:::
 
+| Field                | Allowed Values                        | Default Value                                  |
+| -------------------- | ------------------------------------- | ---------------------------------------------- |
+| `mode`               | "job", "ashby", "lever", "softgarden" | "job"                                          |
+| `success_url`        | Any valid URL                         | the referrer's URL                             |
+| `cancel_url`         | Any valid URL                         | the referrer's URL                             |
+| `job_slug`           | Any string                            | "\<user_id\>\_\<title\>\_\<current_datetime\>" |
+| `title`              | Any string                            | N/A                                            |
+| `description`        | Any string                            | N/A                                            |
+| `start_slot`         | Any valid ISO 8601 date string        | N/A                                            |
+| `longitude`          | Any valid longitude                   | 0.0                                            |
+| `latitude`           | Any valid latitude                    | 0.0                                            |
+| `job_type`           | "Retail", "other types..."            | N/A                                            |
+| `job_status`         | "listed", "unlisted"                  | "archived"                                     |
+| `position`           | Any string                            | N/A                                            |
+| `currency`           | "EUR", "USD", "CHF"                   | "EUR"                                          |
+| `salary`             | Any valid number                      | N/A                                            |
+| `key_skills`         | Any string                            | N/A                                            |
+| `duration`           | Any valid number                      | 1                                              |
+| `job_notifications`  | "0", "1"                              | "1"                                            |
+| `cv_required`        | "true", "false"                       | "false"                                        |
+| `allowed_cv_formats` | [".pdf", ".docx", ".txt", ".xml"]     | [".pdf", ".docx", ".txt", ".xml"]              |

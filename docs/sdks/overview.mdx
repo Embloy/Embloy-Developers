@@ -10,6 +10,10 @@ import { WebSDKRow, MobileSDKRow } from '@site/src/components';
 
 Libraries and tools for interacting with your Embloy integration.
 
+:::tip
+To see examples and detailed information on how to use the SDKs (e.g., what to set as `job_slug` or `mode`), please take a look at our [tutorials](/docs/category/tutorial---basics), [guides](/docs/category/guides) for your use case or the ["How to integrate Quicklink" page](/docs/core/quicklink/quicklink_application#how-to-integrate-quicklink). 
+:::
+
 ## Server-side SDKs
 
 Embloy's server-side helper libraries (also known as server-side SDKs) reduce the amount of work required to use Embloy’s REST APIs, starting with reducing the boilerplate code you have to write. Below are the installation instructions for these libraries in a variety of popular server-side programming languages.
@@ -110,7 +114,7 @@ composer require embloy/embloy-php:dev-main
 
 ```php title="ExampleController.php"
 // Create an instance of EmbloySession
-$session = new EmbloySession('mode', $jobSlug, [
+$session = new EmbloySession('job', $jobSlug, [
     'success_url' => 'success_url', // Add your success URL here
     'cancel_url' => 'cancel_url', // Add your cancel URL here
 ]);

@@ -48,7 +48,7 @@ This is a destructive action and cannot be undone!
 
 ## Jobs you applied for
 
-You can find the jobs you applied for by going to your application section and then clicking on the application's job. Find out more about that in the [application documentation](https://developers.embloy.com/docs/category/applications).
+You can find the jobs you applied for by going to your application section and then clicking on the application's job. Find out more about that in the [application documentation](/docs/category/applications).
 
 ## Upcoming jobs
 

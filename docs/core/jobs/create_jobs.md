@@ -16,7 +16,7 @@ If you have your own job page and integrated _Embloy Quicklink_, you don't need 
 Our recommendation is to create a custom job on Embloy first and then embed it into your website using Quicklink. 
 :::
 
-Read more on this in the [Quicklink documentation](https://developers.embloy.com/docs/core/quicklink/quicklink_application).
+Read more on this in the [Quicklink documentation](/docs/core/quicklink/quicklink_application).
 
 ## Customize jobs
 
@@ -49,7 +49,7 @@ Answers to these questions have to adhere to the allowed values and cannot be lo
 
 You can batch-import jobs on the Embloy-Genius [job dashboard](https://genius.embloy.com/recruitment) by clicking on the "upload" icon in the top right corner of the table. Currently, we only support the following formats:
 
-- Embloy Jobs - JSON ([example](https://developers.embloy.com/files/embloy-job.json))
+- Embloy Jobs - JSON ([example](/files/embloy-job.json))
 
 - _Coming soon ..._
 

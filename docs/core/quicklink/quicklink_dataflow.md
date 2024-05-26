@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Understanding Quicklink's Internal Functionality
+# Understanding Quicklink's internal functionality
 
 This section provides a deep dive into the inner workings of Quicklink, giving you a better understanding of its internal mechanisms and processes.
 
@@ -16,4 +16,4 @@ Our SDKs automatically handle requests from _\<your-service\>_ to _api.embloy.co
 
 ![Quicklink activity diagram](./quicklink.png)
 
-You can find a more detailed BPMN2.0 diagram [here](https://developers.embloy.com/files/Quicklink.pdf).
+You can find a more detailed BPMN2.0 diagram [here](/files/Quicklink.pdf).

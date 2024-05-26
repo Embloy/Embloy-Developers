@@ -1,9 +1,9 @@
 {
-    "label": "Tokens",
+    "label": "Tokens and secrets",
     "position": 8,
     "link": {
       "type": "generated-index",
-      "description": "All about Embloy's token system."
+      "description": "All about Embloy's token system and account secrets."
     }
   }
   
