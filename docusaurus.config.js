@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -76,18 +76,18 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/embloy/embloy-examples#embloy-examples', 
-            label: 'Examples', 
+            href: 'https://github.com/embloy/embloy-examples#embloy-examples',
+            label: 'Examples',
             position: 'left'
           },
           {
-            href: 'https://about.embloy.com', 
-              label: 'Solutions', 
-              position: 'left'
+            href: 'https://docs.embloy.com',
+            label: 'API Docs',
+            position: 'left'
           },
           {
-            href: 'https://docs.embloy.com', 
-            label: 'API docs', 
+            href: 'https://status.embloy.com',
+            label: 'System Status',
             position: 'left'
           },
           //{
@@ -152,7 +152,7 @@ const config = {
             ],
           },
           {
-            title: 'API Reference',
+            title: 'API References & Status',
             items: [
               {
                 label: 'API documentation',
@@ -162,6 +162,10 @@ const config = {
                 label: 'Postman workspace',
                 href: 'https://www.postman.com/embloy/workspace/embloy-workspace/collection/24977803-e44099dd-6647-4b78-bd7a-03293e47dee5',
               },
+              {
+                label: 'System status',
+                href: 'https://status.embloy.com',
+              }
             ],
           },
           {
@@ -195,7 +199,7 @@ const config = {
               {
                 label: 'Privacy',
                 href: 'https://embloy.com/resources/privacy',
-              }, 
+              },
               {
                 label: 'Terms',
                 href: 'https://embloy.com/resources/terms',
@@ -218,7 +222,7 @@ const config = {
         defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
-      },  
+      },
       algolia: {
         // The application ID provided by Algolia
         appId: 'PZJFX96675',
@@ -227,14 +231,14 @@ const config = {
         indexName: 'developers-embloy',
       },
     }
-  ),
+    ),
   scripts: [
     {
       src:
         'https://fonts.googleapis.com/css2?family=lexend&display=swap',
       async: true,
     },
-  ],  
+  ],
 };
 
 module.exports = config;
