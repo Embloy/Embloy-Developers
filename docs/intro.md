@@ -23,7 +23,7 @@ Or get started by **[creating a new Embloy account](https://embloy.com/register)
 - [Node.js](https://nodejs.org/en/download/):
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-- Valid `client_token`. You can create one in our [recruiter portal (aka Embloy-Genius)](https://genius.embloy.com/settings?tab=access). 
+- Valid `client_token`. You can create one in our [recruiter portal (aka Embloy-Genius)](https://genius.embloy.com/settings?tab=secrets). 
 
   :::info
   Learn more about our token system [here](/docs/core/tokens/token_info).
