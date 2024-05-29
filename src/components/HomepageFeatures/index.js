@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/embloy_bike.svg').default,
+    Svg: require('@site/static/img/icons/embloy_bike.svg').default,
     description: (
       <>
         Integrate Embloy into your page with less than 10 lines of code for unparalleled engagement with job seekers.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Streamline Hiring',
-    Svg: require('@site/static/img/embloy_tree.svg').default,
+    Svg: require('@site/static/img/icons/embloy_tree.svg').default,
     description: (
       <>
         Eliminate the need for lengthy email and phone exchanges and enjoy the convenience of a single platform, where everything is just one click away.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'End-to-End Recruitment Hosting',
-    Svg: require('@site/static/img/embloy_train.svg').default,
+    Svg: require('@site/static/img/icons/embloy_train.svg').default,
     description: (
       <>
         Boost your application pipeline with Embloy. It can be connected to third party ATS or HR systems for efficient application processing.

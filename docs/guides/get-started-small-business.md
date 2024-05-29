@@ -12,7 +12,7 @@ This guide is for small and local businesses that want to get started with Emblo
 Hey there! 👋 Welcome to Embloy! We are excited to have you on board. This guide will explain every step you need to take to get started with Embloy and make the most out of our platform.
 
 ## Step 1: Create an account
-If you haven't already, you can create an account by visiting our [registration page](https://embloy.com/register) page. You can also sign up using your Google, LinkedIn, Microsoft, or GitHub accounts. 
+If you haven't already, you can create an account by visiting our [registration page](https://embloy.com/register). You can also sign up using your Google, LinkedIn, Microsoft, or GitHub accounts. 
 
 After you have created an account, you will receive a confirmation email. Click on the link in the email to verify your account.
 
@@ -39,9 +39,9 @@ Currently, we only support job uploads in JSON format. We are working on an in-a
 :::
 - Download our <a href="https://developers.embloy.com/files/embloy-job.json" target="_blank">example job</a>
 - Log into our [recruiter portal](https://genius.embloy.com/) and click on the "Add job" button
-![Add job button](/img/upload_job.png)
+![Add job button](./upload-job.png)
 - Upload the job file
-![Add job button](/img/save_job.png)
+![Add job button](./save-job.png)
 
 _[More information](/docs/core/jobs/create_jobs)_
 
@@ -54,7 +54,7 @@ _[More information](/docs/core/jobs/create_jobs)_
 ### Via Embloy Genius
 - Log into our [recruiter portal](https://genius.embloy.com/) and view the applications
 - Screen the applications and respond to the candidates
-### Via Email
+### Via email
 - You will receive an email notification every time a candidate applies
 - You can view the application by clicking on the link in the email or following the instructions above
 - Screen the applications and respond to the candidates via email

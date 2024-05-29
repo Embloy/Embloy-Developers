@@ -1,0 +1,90 @@
+---
+sidebar_position: 4
+---
+
+# Getting started - Integrations
+
+:::info
+This guide is for Embloy customers that want to integrate Embloy with a 3rd party service that partners with Embloy. If you are a current or potential partner, please refer to the [Partners guide](/docs/guides/get-started-partners) or contact us directly.
+:::
+
+Hey there! 👋 Welcome to Embloy! We are excited to have you on board. This guide will explain every step you need to take to connect your ATS with Embloy.
+
+## Prerequisites
+
+- You are currently using an external ATS system
+
+- The ATS system has an Embloy integration (see [list of supported ATS providers supporting Embloy](/docs/genius/integrations/supported_integrations))
+
+## Step 1: Create an account
+
+If you haven't already, you can create an Embloy account by visiting our [registration page](https://embloy.com/register). You can also sign up using your Google, LinkedIn, Microsoft, or GitHub accounts.
+
+After you have created an account, you will receive a confirmation email. Click on the link in the email to verify your account.
+
+_[More information](/docs/category/account)_
+
+## Step 2: Subscribe to Embloy
+
+[Choose a plan and subscribe](https://genius.embloy.com/settings?tab=billing) to Embloy. We partner up with Stripe to process payments, so you don't have to worry about us storing or processing any sensitive information.
+
+_[More information](/docs/category/subscriptions)_
+
+
+
+## Step 3: Enable the integration
+
+  :::note
+  If anything is unclear, follow the instructions shown in your ATS and if necessary, see their documentation and guides.
+  :::
+
+<div style={{ display: "flex", justifyContent: "space-between" }}>
+  <div style={{ display: "flex flex-col", width: "90%" }}>
+    - Go to your ATS provider's admin dashboard and enable the Embloy integration. For most providers, this will prompt you to create a new API key
+    <img
+      src={require("./enable-integration.png").default}
+      alt="Enable Integration"
+      style={{ marginTop: "2%", width: "100%", height: "100%" }}/>
+  </div>
+  <div style={{ display: "flex flex-col", width: "90%" }}>
+    - If necessary, select the correct permissions (read job postings + read/write applications)
+    <img
+      src={require("./enable-integration-2.png").default}
+      alt="Enable Integration"
+      style={{ marginTop: "2%", width: "100%", height: "100%" }}/>
+  </div>
+</div>
+
+## Step 4: Exchange API keys
+
+### Upload ATS provider's API key to Embloy
+
+Copy and paste the API key into a new Embloy secret in the "secrets" tab of your [Embloy Genius settings](https://genius.embloy.com/settings?tab=secrets). 
+  :::important
+  **Make sure to select the name of the 3rd party for the `issuer` option, as the API key can't be used otherwise**.
+  :::
+
+  ![Upload ATS provider's API Key](./upload-secret.png)
+
+_[More information](/docs/core/tokens/secrets#upload-3rd-party-api-keys)_
+
+### Upload Embloy's client token to ATS provider 
+
+Finally, create a new `client_token` in the "secrets" tab of your [Embloy Genius settings](https://genius.embloy.com/settings?tab=secrets) and paste it into your ATS provider's Embloy integration 
+  :::note
+  By default, the `client_token` expires after three months, but you can customize it up to one year. However, once expired, you will have to create and upload a new one.
+  :::
+![Create client token](./create-client_token.png)
+![Create client token](./create-client_token-2.png)
+
+_[More information](/docs/core/tokens/token_info#client-token)_
+
+## Concolusion
+
+### Receive applications via your ATS
+
+- Now that you have connected your ATS, applications submitted through Embloy will automatically be sent there so that you can process your applications as usual
+
+- If you need to, you can also log into our [recruiter portal](https://genius.embloy.com/), screen the applications and respond to the candidates directly. However, if you are using Embloy as an integration and not as a standalone tool, we recommend you to manage your applications directly via your ATS
+
+_[More information](/docs/category/manage-applications/)_

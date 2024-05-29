@@ -64,8 +64,8 @@ const config = {
       navbar: {
         logo: {
           alt: 'Embloy Logo',
-          src: 'img/developers_logo_on_light.svg',
-          srcDark: 'img/developers_logo_on_dark.svg',
+          src: 'img/branding/developers_logo_on_light.svg',
+          srcDark: 'img/branding/developers_logo_on_dark.svg',
         },
         items: [
           {
@@ -105,7 +105,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'Embloy Logo',
-          src: 'img/logo-3.png',
+          src: 'img/branding/opensource-banner.png',
           href: 'https://github.com/embloy',
         },
         links: [

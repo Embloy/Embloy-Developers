@@ -6,4 +6,4 @@ sidebar_position: 4
 
 _Coming soon ..._
 
-This feature is not implemented yet. Fore more information see our [GitHub issues](https://github.com/Embloy/Embloy-Core-Server/issues).
+This feature is not implemented yet. For more information see our [GitHub issues](https://github.com/Embloy/Embloy-Core-Server/issues).
