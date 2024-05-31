@@ -16,7 +16,7 @@ If you have experience with tools like Stripe's one-click checkout or PayPal's o
 
 ---
 
-TL;DR: We need your API documentation and access to a sandbox or test account to start developing the integration. On your side, you need to implement features in your ATS to enable the Embloy button, which allows candidates to apply for jobs with a single click. This involves uploading an Embloy API key, authenticating the request by calling our SDKs using this key when a candidate applies for a job, and displaying the Embloy button on every job posting.
+> TL;DR: We need your API documentation and access to a sandbox or test account to start developing the integration. On your side, you need to implement features in your ATS to enable the Embloy button, which allows candidates to apply for jobs with a single click. This involves uploading an Embloy API key, authenticating the request by calling our SDKs using this key when a candidate applies for a job, and displaying the Embloy button on every job posting.
 
 ---
 
@@ -75,7 +75,7 @@ The process involves two steps:
 
 ### Step 3: The "Apply with Embloy" button
 
-The Embloy button needs to be displayed on every job posting on the job board of customers of your ATS that have enabled the Embloy integration and make a call to the endpoint defined in Step 2.
+The Embloy button needs to be displayed on every job posting on the job board of customers of your ATS that have enabled the Embloy integration and, when pressed, make a call to the endpoint defined in Step 2.
 
 A typical implementation might look like this, but for this part, you can think of an approach that works best for you:
 
@@ -91,11 +91,16 @@ const handleApplyClick = async () => {
 
     // Redirect the user to the application portal
     window.location.href = (await response.json()).url;
+  } catch (error) {
+    console.error('Error:', error);
   }
 };
 ```
 
-The final step ist to add the button to your UI that calls this action:
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+  <p>The final step is to add the button to your UI that calls this action and looks like this one 👉</p>
+  <a><img src="https://embloy.com/images/button-black_large.svg" style={{ width: "250px", height: "auto" }} /></a>
+</div>
 
 ```TSX title="app/application-form.tsx"
 <button onClick={handleApplyClick}>
@@ -103,11 +108,11 @@ The final step ist to add the button to your UI that calls this action:
 </button>
 ```
 
-When a candidate clicks on "_Embloy Apply_ ", they will be redirected to Embloy's application portal.
+When a candidate clicks on "_Embloy Apply_ " on your page, they will be then redirected to Embloy's application portal.
 
 ---
 
-## Testing & Launch
+## Testing & launch
 
 After both sides have implemented their parts, we will conduct thorough testing to ensure the integration works as expected.
 
