@@ -37,7 +37,7 @@ The core component of Embloy is the Embloy button, which is placed on job boards
 
 ### Step 1: Embloy API key upload
 
-Implement a feature in your ATS that allows customers to upload an Embloy API key Embloy API key (aka [client token](/docs/core/tokens/token_info#client-token)). This key is necessary for security reasons and to authenticate requests when submitting an application to the Embloy API.
+Implement a feature in your ATS that allows customers to upload an Embloy API key (aka [client token](/docs/core/tokens/token_info#client-token)) which they can create in their Embloy dashboard. This key is necessary for security reasons and to authenticate requests when submitting an application to the Embloy API.
 
 :::note
 We use the terms "Embloy API key" and "client token" interchangeably.
@@ -79,7 +79,6 @@ The Embloy button needs to be displayed on every job posting on the job board of
 
 A typical implementation might look like this, but for this part, you can think of an approach that works best for you:
 
-
 ```TSX title="application-form.tsx"
 const handleApplyClick = async () => {
   try {
@@ -103,7 +102,7 @@ const handleApplyClick = async () => {
 </div>
 
 ```TSX title="app/application-form.tsx"
-<button onClick={handleApplyClick}>
+<button onClick={handleApplyClick}> <!-- Style this accordingly so that it fits within your UI -->
   <img src="https://embloy.com/images/button-black_large.svg" style={{ width: "300px", height: "auto" }} />
 </button>
 ```
@@ -155,7 +154,7 @@ _**No**. You can use our [open-source SDKs](https://github.com/embloy) out of co
 <details>
 <summary>Can the Embloy button be integrated with mobile applications?</summary>
 
-_**Yes** The process for integrating the Embloy button with mobile applications is similar to integrating it with a website as described above. You need to implement the same features in your mobile application as you would for a website. You can either use our [Mobile SDKs](http://localhost:3000/docs/category/mobile-sdks) or do it manually by calling [this endpoint](https://docs.embloy.com/#7629b41f-882f-4897-bacd-5b900378eac6). If you need help with this, [**please contact us**](https://about.embloy.com/en/contact) and we'll do our best to help._
+_**Yes**. The process for integrating the Embloy button with mobile applications is similar to integrating it with a website, as described above. You need to implement the same features in your mobile application as you would for a website. You can either use our soon-to-be-released [mobile SDKs](http://localhost:3000/docs/category/mobile-sdks) or do it manually by calling [this endpoint](https://docs.embloy.com/#7629b41f-882f-4897-bacd-5b900378eac6). If you need help with this, [**please contact us**](https://about.embloy.com/en/contact) and we'll do our best to help._
 
 </details>
 
@@ -169,17 +168,15 @@ _We try to provide SDKs for the most popular frameworks, but if we don't support
 <details>
 <summary>Are there any costs associated with the integration?</summary>
 
-_**No** We only charge companies for using our platform as an employer to receive applications. Since an integration does not fall under this category, there are no costs associated with it from our side._
+_**No**. We only charge companies for using our platform as an employer to receive applications. Since an integration does not fall under this category, there are no costs associated with it from our side._
 
 </details>
 
 <details>
 <summary>Can I customize the look and feel of the Embloy button?</summary>
 
-_Currently we offer a few [default buttons](https://github.com/Embloy/Embloy-Examples#Embloy-Button), to accommodate for light and dark backgrounds. If you need a different style, [**please contact us**](https://about.embloy.com/en/contact) and we'll do our best to help._
+_Currently, we offer a few [default buttons](https://github.com/Embloy/Embloy-Examples#Embloy-Button), to accommodate for light and dark backgrounds. If you need a different style, [**please contact us**](https://about.embloy.com/en/contact) and we'll do our best to help._
 
 </details>
 
-
-
-Any other questions? Just [reach out to us](https://about.embloy.com/en/contact) and we'll do our best to help.
+Any other questions or technical issues? Just [reach out to us](https://about.embloy.com/en/contact) and we'll do our best to help.
