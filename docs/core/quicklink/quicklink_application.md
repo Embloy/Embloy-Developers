@@ -27,7 +27,7 @@ You can find example implementations at [Embloy Examples](https://github.com/emb
 The only required field is `job_slug` that is our way to identify a job that may not be known to us yet. In the event of a successful application, a new blank job will be created (in case it doesn't already exist) for your Embloy account. You can then edit this job in the Embloy dashboard.
 
     :::tip
-    If you have a 3rd-party ATS running in the background, we recommend setting `job_slug` to the ID of your 3rd-party job posting and `mode` to the name of your 3rd-party ATS system (e.g., `ashby`, `lever` or `softgarden`). More on that [here](/docs/guides/get-started-partners.md).
+    If you have a 3rd-party ATS running in the background, we recommend setting `job_slug` to the ID of your 3rd-party job posting and `mode` to the name of your 3rd-party ATS system (e.g., `ashby`, `lever` or `softgarden`). More on that [here](/docs/guides/get-started-partners).
     :::
     
     :::warning

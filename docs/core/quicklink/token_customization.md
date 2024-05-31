@@ -62,7 +62,7 @@ You can customize your request tokens to have custom application session details
 ### Session values
 
 :::note
-For more information on the `mode` and `job_slug` values, see the [guides](/docs/guides/get-started-partners.md).
+For more information on the `mode` and `job_slug` values, see the [guides](/docs/guides/get-started-partners).
 :::
 
 | Field                | Allowed Values                        | Default Value                                  |
