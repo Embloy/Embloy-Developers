@@ -21,6 +21,7 @@ To start developing the integration from our side, we'll only need 2 things from
 We will then start developing the integration from our side based on these resources. We will ensure that you stay informed about the progress and will reach out to you if we need any additional information.
 
 ## Your side
+The integration developed on our side needs to be incorporated into your ATS. To make that work we need you to implement the following features:
 
 ### Embloy button integration
 The core component of Embloy is the Embloy button, which is placed on job boards to allow candidates to apply for jobs with a single click. To enable this functionality, you need to implement the following features in your ATS:
