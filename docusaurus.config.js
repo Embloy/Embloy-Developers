@@ -56,7 +56,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Join the early birds & be among the first to explore our closed beta by filling out <a target="_blank" rel="noopener noreferrer" href="https://embloy-platforms.involve.me/beta">this form</a>.',
+          '<a target="_blank" rel="noopener noreferrer" href="https://about.embloy.com/en/contact/">Please provide feedback on this developer documentation - especially if you find anything unclear, missing, or incorrect. We really do appreciate it!</a>',
         backgroundColor: '#99FFFF',
         textColor: '#191920',
         isCloseable: true,
