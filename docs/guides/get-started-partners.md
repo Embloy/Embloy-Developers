@@ -118,7 +118,7 @@ Once the integration has been successfully tested, Embloy is ready to launch and
 ## FAQ
 
 <details>
-<summary>Why do we need to save a client token and make an API call using Embloy's SDKs before redirecting the user instead of just hardcoding a link to a job (e.g., `embloy.com/apply?jobPostingId=...`)?</summary>
+<summary>Why do I need to save a client token and make an API call using Embloy's SDKs before redirecting the user instead of just hardcoding a link to a job (e.g., `embloy.com/apply?jobPostingId=...`)?</summary>
 
 _There are two reasons for this:_
 
