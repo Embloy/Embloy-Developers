@@ -123,6 +123,13 @@ Once the integration has been successfully tested, Embloy is ready to launch and
 ## FAQ
 
 <details>
+<summary>What is the typical timeline for completing the integration?</summary>
+
+_In our experience, **a typical integration takes around 2-4 weeks to be developed and tested**. The timeline can vary depending on the complexity of the integration and the availability of resources on both sides. If you have a specific timeline in mind, [**please let us know**](https://about.embloy.com/en/contact)._
+
+</details>
+
+<details>
 <summary>Why do I need to save a client token and make an API call using Embloy's SDKs before redirecting the user instead of just hardcoding a link to a job (e.g., `embloy.com/apply?jobPostingId=...`)?</summary>
 
 _There are two reasons for this:_
@@ -146,10 +153,33 @@ _**No**. You can use our [open-source SDKs](https://github.com/embloy) out of co
 </details>
 
 <details>
-<summary>Embloy doesn't provide an SDK for my backend framework. What should I do?</summary>
+<summary>Can the Embloy button be integrated with mobile applications?</summary>
 
-_We try to provide SDKs for the most popular frameworks, but if we don't support yours yet, **please contact us** and we'll either create a new SDK or explain in detail how to do it manually using [this endpoint](https://docs.embloy.com/#7629b41f-882f-4897-bacd-5b900378eac6)._
+_**Yes** The process for integrating the Embloy button with mobile applications is similar to integrating it with a website as described above. You need to implement the same features in your mobile application as you would for a website. You can either use our [Mobile SDKs](http://localhost:3000/docs/category/mobile-sdks) or do it manually by calling [this endpoint](https://docs.embloy.com/#7629b41f-882f-4897-bacd-5b900378eac6). If you need help with this, [**please contact us**](https://about.embloy.com/en/contact) and we'll do our best to help._
 
 </details>
+
+<details>
+<summary>Embloy doesn't provide an SDK for my backend framework. What should I do?</summary>
+
+_We try to provide SDKs for the most popular frameworks, but if we don't support yours yet, [**please contact us**](https://about.embloy.com/en/contact) and we'll either create a new SDK or explain in detail how to do it manually using [this endpoint](https://docs.embloy.com/#7629b41f-882f-4897-bacd-5b900378eac6)._
+
+</details>
+
+<details>
+<summary>Are there any costs associated with the integration?</summary>
+
+_**No** We only charge companies for using our platform as an employer to receive applications. Since an integration does not fall under this category, there are no costs associated with it from our side._
+
+</details>
+
+<details>
+<summary>Can I customize the look and feel of the Embloy button?</summary>
+
+_Currently we offer a few [default buttons](https://github.com/Embloy/Embloy-Examples#Embloy-Button), to accommodate for light and dark backgrounds. If you need a different style, [**please contact us**](https://about.embloy.com/en/contact) and we'll do our best to help._
+
+</details>
+
+
 
 Any other questions? Just [reach out to us](https://about.embloy.com/en/contact) and we'll do our best to help.
