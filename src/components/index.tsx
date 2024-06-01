@@ -7,7 +7,6 @@
 
 /* eslint-disable global-require */
 
-import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
@@ -34,36 +33,6 @@ const WebSDKs = [
   },
 ];
 
-const MobileSDKs = [
-  {
-    name: 'Embloy iOS SDK',
-    url: '/docs/sdks/mobile_sdks/ios_sdk',
-    description: (
-      <Translate>
-        📦 IOS
-      </Translate>
-    ),
-  },
-  {
-    name: 'Embloy Android SDK',
-    url: '/docs/sdks/mobile_sdks/android_sdk',
-    description: (
-      <Translate>
-        📦 ANDROID 
-      </Translate>
-    ),
-  },
-  {
-    name: 'Embloy React Native SDK',
-    url: '/docs/sdks/mobile_sdks/react_native_sdk',
-    description: (
-      <Translate>
-        📦 REACT NATIVE
-      </Translate>
-    ),
-  },
-];
-
 interface Props {
   name: string;
   url: string;
@@ -73,7 +42,7 @@ interface Props {
 function SDKCard({name, url, description}: Props) {
   return (
     <div className={clsx('col col--4 margin-bottom--lg')}>
-      <Link className="button button--primary" to={url}>
+      <Link className="button button--primary disabled" to={url}>
         <div className="card__body">
           <h3>{name}</h3>
           <p>{description}</p>
@@ -87,16 +56,6 @@ export function WebSDKRow(): JSX.Element {
   return (
     <div className="row">
       {WebSDKs.map((sdk) => (
-        <SDKCard key={sdk.name} {...sdk} />
-      ))}
-    </div>
-  );
-}
-
-export function MobileSDKRow(): JSX.Element {
-  return (
-    <div className="row">
-      {MobileSDKs.map((sdk) => (
         <SDKCard key={sdk.name} {...sdk} />
       ))}
     </div>

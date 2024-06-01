@@ -40,11 +40,12 @@ const config = {
           editUrl: 'https://github.com/Embloy/Embloy-Developers/edit/main',
           // Remove this to remove the "edit this page" links.
         },
-        /*blog: {
+        blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },*/
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'Recent posts',
+          blogTitle: 'Blog',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -75,7 +76,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/embloy/embloy-examples#embloy-examples',
             label: 'Examples',
