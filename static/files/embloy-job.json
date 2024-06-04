@@ -34,8 +34,23 @@
     },
     {
       "question": "What is your favorite coffee?",
-      "question_type": "text",
+      "question_type": "short_text",
       "required": true
+    },
+    {
+      "question": "How many cups of coffee do you drink per day?",
+      "question_type": "number",
+      "required": true
+    },
+    {
+      "question": "What is the most important thing when preparing coffee?",
+      "question_type": "long_text",
+      "required": true
+    },
+    { 
+      "question": "When did you last prepare coffee?",
+      "question_type": "date",
+      "required": false
     },
     {
       "question": "Provide a link to a video of you preparing coffee.",

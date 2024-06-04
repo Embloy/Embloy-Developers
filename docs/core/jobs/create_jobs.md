@@ -13,7 +13,7 @@ To create jobs, you need to have a valid Embloy subscription.
 If you have your own job page and integrated _Embloy Quicklink_, you don't need to worry about job creation as we automatically create an unlisted (only visible to you and applicants using the "Apply with Embloy" Button on your page) job listing on Embloy which you can access and edit just as usual via the job dashboard.
 
 :::tip
-Our recommendation is to create a custom job on Embloy first and then embed it into your website using Quicklink. 
+Our recommendation is to create a custom job on Embloy first and then embed it into your website using Quicklink.
 :::
 
 Read more on this in the [Quicklink documentation](/docs/core/quicklink/quicklink_application).
@@ -36,14 +36,14 @@ Application requirements are not supported yet by Quicklink's automatic job crea
 
 For any given job, you can create at most 50 application requirements. Allowed application requirements are as follows:
 
-| Field                 | Allowed Values                                                    | Default Value                                 |
-|-----------------------|-------------------------------------------------------------------|-----------------------------------------------|
-| `question_type`       | "yes_no", "text", "link", "single_choice", "multiple_choice"                  |  "yes_no"                                          |
-| `question`            | Any valid string with a maximum length of 500 characters                      | -                                                  |
-| `required`            | true, false                                                                   | true                                               |
-| `options`             | An array of at least 1 and at most 50 strings, with each a maximum length of 100 characters (can only be set for single_choice and multiple_choice) | -                                             |
+| Field           | Allowed Values                                                                                                                                      | Default Value |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `question_type` | "yes_no", "short_text", "long_text", "link", "number", "single_choice", "multiple_choice", "location", "date"                                       | "yes_no"      |
+| `question`      | Any valid string with a maximum length of 500 characters                                                                                            | -             |
+| `required`      | true, false                                                                                                                                         | true          |
+| `options`       | An array of at least 1 and at most 50 strings, with each a maximum length of 100 characters (can only be set for single_choice and multiple_choice) | -             |
 
-Answers to these questions have to adhere to the allowed values and cannot be longer than 500 characters for answers to "link" and "text" question types.
+Answers to these questions have to adhere to the allowed values and cannot be longer than 200 characters for answers to "link", "number" and "short_text" and not longer tan 1000 characters for "location" and "long_text" question types.
 
 ## Import external jobs
 
