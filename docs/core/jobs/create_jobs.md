@@ -31,19 +31,37 @@ To get an overview of allowed job values, see [this table](./../quicklink/token_
 If you want applicants to answer certain questions, and provide links to their social media profiles or portfolio websites, you can customize this when creating/editing your job.
 
 :::note
-Application requirements are not supported yet by Quicklink's automatic job creation. Therefore, to use these, you will have to manually create / import your job in Embloy, and then embed this job on your website.
+Application requirements are not supported yet by Quicklink's automatic job creation. Therefore, to use these, you will have to either manually create / import your job in Embloy or use one of our ATS integrations, and then embed this job on your website.
 :::
 
 For any given job, you can create at most 50 application requirements. Allowed application requirements are as follows:
 
-| Field           | Allowed Values                                                                                                                                      | Default Value |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| `question_type` | "yes_no", "short_text", "long_text", "link", "number", "single_choice", "multiple_choice", "location", "date"                                       | "yes_no"      |
-| `question`      | Any valid string with a maximum length of 500 characters                                                                                            | -             |
-| `required`      | true, false                                                                                                                                         | true          |
-| `options`       | An array of at least 1 and at most 50 strings, with each a maximum length of 100 characters (can only be set for single_choice and multiple_choice) | -             |
+| Field           | Allowed Values                                                                                                                                            | Default Value |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `question_type` | "yes_no", "short_text", "long_text", "link", "number", "single_choice", "multiple_choice", "location", "date", "file"                                     | "yes_no"      |
+| `question`      | Any valid string with a maximum length of 500 characters                                                                                                  | -             |
+| `required`      | true, false                                                                                                                                               | true          |
+| `options`       | An array of at least 1 and at most 50 strings, with each a maximum length of 100 characters (can only be set for single_choice, multiple_choice and file) | -             |
 
 Answers to these questions have to adhere to the allowed values and cannot be longer than 200 characters for answers to "link", "number" and "short_text" and not longer tan 1000 characters for "location" and "long_text" question types.
+
+### File Attachment
+
+You can choose to require an applicant to attach files to their applications. To enable this feature, set the `question_type` to "file" and specify the permissible file types in the `options` field. If the `options` field is left empty, the system will default to accepting ".pdf" files.
+
+The following is a list of acceptable file types:
+
+```ruby
+ALLOWED_FILE_TYPES = %w[
+pdf doc docx txt rtf odt
+  jpg jpeg png gif bmp tiff tif svg
+  mp4 avi mov wmv flv mkv webm
+  ogg mp3 wav wma aac m4a
+  zip rar tar 7z gz bz2
+  xls xlsx ods
+  ppt pptx
+]
+```
 
 ## Import external jobs
 
@@ -60,3 +78,4 @@ You can create Embloy-Jobs manually using our job editor which you can find at [
 ## Create jobs manually
 
 If you want to create Embloy-Jobs manually, you can use [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-832650d0-f343-4f90-9dec-e5828711156a).
+```
