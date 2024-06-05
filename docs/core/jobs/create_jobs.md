@@ -45,23 +45,21 @@ For any given job, you can create at most 50 application requirements. Allowed a
 
 Answers to these questions have to adhere to the allowed values and cannot be longer than 200 characters for answers to "link", "number" and "short_text" and not longer tan 1000 characters for "location" and "long_text" question types.
 
-### File Attachment
+Answers to questions of type "date" need to be a valid date string (e.g., "2024-12-31 23:42:14.048805000 +0000").
+
+### File attachment
 
 You can choose to require an applicant to attach files to their applications. To enable this feature, set the `question_type` to "file" and specify the permissible file types in the `options` field. If the `options` field is left empty, the system will default to accepting ".pdf" files.
 
 The following is a list of acceptable file types:
 
-```ruby
-ALLOWED_FILE_TYPES = %w[
-pdf doc docx txt rtf odt
-  jpg jpeg png gif bmp tiff tif svg
-  mp4 avi mov wmv flv mkv webm
-  ogg mp3 wav wma aac m4a
-  zip rar tar 7z gz bz2
-  xls xlsx ods
-  ppt pptx
-]
-```
+- Text files: pdf, doc, docx, txt, rtf, odt
+- Image files: jpg, jpeg, png, gif, bmp, tiff, tif, svg
+- Video files: mp4, avi, mov, wmv, flv, mkv, webm
+- Audio files: ogg, mp3, wav, wma, aac, m4a
+- Compressed files: zip, rar, tar, 7z, gz, bz2
+- Spreadsheet files: xls, xlsx, ods
+- Presentation files: ppt, pptx
 
 ## Import external jobs
 
@@ -78,4 +76,7 @@ You can create Embloy-Jobs manually using our job editor which you can find at [
 ## Create jobs manually
 
 If you want to create Embloy-Jobs manually, you can use [this endpoint](https://www.postman.com/embloy/workspace/embloy-workspace/request/24977803-832650d0-f343-4f90-9dec-e5828711156a).
+
+```
+
 ```
