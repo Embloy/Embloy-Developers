@@ -59,11 +59,16 @@ You should only expect the following subclasses of `::InvalidInput`
     - `::Malformed`
   - `::Mode` Related to the requested application portal mode
     - `::Malformed`
-  - `::ApiKey` Related to the connected third party API
+  - `::ApiKey` Related to the connected third party API key
     - `::Malformed`
     - `::Missing`
     - `::Unauthorized`
     - `::Inactive`
+  - `::Application` Related to the application submission to the third party API
+    - `::Malformed`
+    - `::Unauthorized`
+    - `::Duplicate`
+
   ####
 
 ---
