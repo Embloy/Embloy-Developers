@@ -64,6 +64,11 @@ You should only expect the following subclasses of `::InvalidInput`
     - `::Missing`
     - `::Unauthorized`
     - `::Inactive`
+  - `::OAuth` Related to the connected third party OAuth app
+    - `::Unauthorized`
+    - `::Forbidden`
+    - `::NotFound`
+    - `::NotAcceptable`
   - `::Application` Related to the application submission to the third party API
     - `::Malformed`
     - `::Unauthorized`
