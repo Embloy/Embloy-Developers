@@ -13,13 +13,6 @@
   "latitude": 48.1951076,
   "job_notifications": 1,
   "currency": "USD",
-  "cv_required": true,
-  "allowed_cv_formats": [
-    ".pdf",
-    ".docx",
-    ".txt",
-    ".xml"
-  ],
   "application_options_attributes": [
     {
       "question": "Did you ever work as a barista?",
@@ -29,7 +22,7 @@
     },
     {
       "question": "If yes, where and for how long?",
-      "question_type": "text",
+      "question_type": "long_text",
       "required": false
     },
     {
@@ -78,6 +71,23 @@
         "Maybe...",
         "I can neither confirm nor deny."
       ]
+    },
+    {
+      "question": "Upload your CV",
+      "question_type": "file",
+      "required": false
+    },
+    {
+      "question": "Upload an image of a perfect Espresso",
+      "question_type": "file",
+      "required": false,
+      "options": ["svg", "png", "jpeg", "jpg"]
+    },
+    {
+      "question": "Upload a video of you preparing coffee",
+      "question_type": "file",
+      "required": false,
+      "options": ["mp4", "avi", "mov"]
     }
   ]
 }
