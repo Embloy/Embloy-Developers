@@ -11,7 +11,6 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
-import {useColorMode} from '@docusaurus/theme-common'; // Import the hook
 import '../css/custom.css';
 
 const WebSDKs = [
