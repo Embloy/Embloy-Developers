@@ -53,7 +53,7 @@ You can choose to require an applicant to attach files to their applications. To
 
 The following is a list of acceptable file types:
 
-- Text files: pdf, doc, docx, txt, rtf, odt
+- Text files: pdf, doc, docx, txt, rtf, odt, xml
 - Image files: jpg, jpeg, png, gif, bmp, tiff, tif, svg
 - Video files: mp4, avi, mov, wmv, flv, mkv, webm
 - Audio files: ogg, mp3, wav, wma, aac, m4a

@@ -20,9 +20,7 @@ To apply manually using Quicklink, you can use [this endpoint](https://www.postm
 
 > For public jobs listed on Embloy's Jobfinder, you can apply directly on embloy.com.
 
-To apply, you always have to write a short message with text according to the employer's expectations.
-
-Optionally, the employer can choose to require you to upload an additional document (e.g., a CV). If this is the case, make sure to upload documents matching the required format, as the application can't be successfully submitted otherwise.
+Optionally, the employer can choose to require you to answer additional questions (single choice, multiple choice, date, number, long text, short text, location) or upload additional documents (e.g., a CV or Video). If this is the case, make sure to upload documents matching the required format, as the application can't be successfully submitted otherwise.
 
 :::warning
 Proofread your application carefully, as you won't be able to change it once it has been uploaded.

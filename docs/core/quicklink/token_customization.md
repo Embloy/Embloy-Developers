@@ -49,13 +49,6 @@ You can customize your request tokens to have custom application session details
     "key_skills": "Entrepreneurship",
     "duration": "9",
     "job_notifications": "1",
-    "cv_required": "true",
-    "allowed_cv_formats": [
-      ".pdf",
-      ".docx",
-      ".txt",
-      ".xml"
-    ]
 }
 ```
 
@@ -84,5 +77,3 @@ For more information on the `mode` and `job_slug` values, see the [guides](/docs
 | `key_skills`         | Any string                            | N/A                                            |
 | `duration`           | Any valid number                      | 1                                              |
 | `job_notifications`  | "0", "1"                              | "1"                                            |
-| `cv_required`        | "true", "false"                       | "false"                                        |
-| `allowed_cv_formats` | [".pdf", ".docx", ".txt", ".xml"]     | [".pdf", ".docx", ".txt", ".xml"]              |

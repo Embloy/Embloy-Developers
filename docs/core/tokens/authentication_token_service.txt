@@ -351,13 +351,6 @@ The API is still in a early beta version, so changes to the general approach and
             "key_skills": "Entrepreneurship",
             "duration": "9",
             "job_notifications": "1",
-            "cv_required": "true",
-            "allowed_cv_formats": [
-              ".pdf",
-              ".docx",
-              ".txt",
-              ".xml"
-            ],
             "user_id": 1,
             "subscription_type": "premium"
           }
