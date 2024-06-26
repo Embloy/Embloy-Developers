@@ -144,7 +144,7 @@ try {
   - https://mvnrepository.com/artifact/com.embloy/sdk or
   - https://github.com/embloy/embloy-java/releases/latest
 */
-implementation "com.embloy:sdk:0.1.7"
+implementation "com.embloy:sdk:0.1.13"
 ```
 
 ```Java title="build.gradle.kts"
@@ -154,7 +154,7 @@ implementation "com.embloy:sdk:0.1.7"
   - https://mvnrepository.com/artifact/com.embloy/sdk or
   - https://github.com/embloy/embloy-java/releases/latest
 */
-implementation("com.embloy:sdk:0.1.7")
+implementation("com.embloy:sdk:0.1.13")
 ```
 
 ```XML title="pom.xml"
@@ -167,7 +167,7 @@ implementation("com.embloy:sdk:0.1.7")
 <dependency>
     <groupId>com.embloy</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.1.7</version>
+    <version>0.1.13</version>
 </dependency>
 ```
 
@@ -177,9 +177,6 @@ import embloy.EmbloySession;
 
 public class ExampleClass {
     public static void exampleEndpoint() {
-        // Replace these values with your actual client token and session data
-        String clientToken = "your-client-token";
-
         // Example of using a preset value directly from EmbloyRequestMode enum (e.g., JOB_MODE, ASHBY_MODE, LEVER_MODE, etc.)
         // These presets correspond to different Applicant Tracking Systems (ATS) supported by Embloy.
         EmbloyRequestMode modePreset = EmbloyRequestMode.JOB_MODE;
@@ -189,14 +186,15 @@ public class ExampleClass {
         // Throws IllegalArgumentException if the value does not match any supported mode.
         EmbloyRequestMode customMode = EmbloyRequestMode.fromValue("your-custom-ats");
 
+        // Replace these values with your actual client token and session data
         // Choose between modePreset or customMode based on your use case
         EmbloySession session = new EmbloySession(modePreset, "your-job-slug", "your-success-url", "your-cancel-url");
 
-        EmbloyClient embloyClient = new EmbloyClient(clientToken, session);
+        EmbloyClient embloyClient = new EmbloyClient("your-client-token", session);
 
         try {
-            String applyUrl = embloyClient.makeRequest();
-            // Redirect user to applyUrl
+            String redirectURL = embloyClient.makeRequest(); // looks like: `https://embloy.com/en-US/sdk/apply?request_token=...`
+            // Redirect user to redirectURL
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
