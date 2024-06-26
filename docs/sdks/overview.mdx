@@ -251,23 +251,23 @@ import (
 )
 
 func yourExampleEndpoint(c *gin.Context) {
-    // Call Embloy-Go SDK to get a request_token
-		sessionData := embloy.SessionData{
-			Mode:       "job",
-			SuccessURL: "your-success-url",
-			CancelURL:  "your-cancel-url",
-			JobSlug:    jobSlug,
-		}
-		client := embloy.NewEmbloyClient("your-client-token", sessionData)
+  // Call Embloy-Go SDK to get a request_token
+  sessionData := embloy.SessionData{
+    Mode:       "job",
+    SuccessURL: "your-success-url",
+    CancelURL:  "your-cancel-url",
+    JobSlug:    jobSlug,
+  }
+  client := embloy.NewEmbloyClient("your-client-token", sessionData)
 
-    redirectURL, err := client.MakeRequest()
-    if err != nil {
-        fmt.Println("Error:", err)
-        return
-    }
+  redirectURL, err := client.MakeRequest()
+  if err != nil {
+    fmt.Println("Error:", err)
+    return
+  }
 
-    // Redirect to the Embloy application portal
-    c.Redirect(http.StatusFound, redirectURL)
+  // Redirect to the Embloy application portal
+  c.Redirect(http.StatusFound, redirectURL)
 }
 ```
 
