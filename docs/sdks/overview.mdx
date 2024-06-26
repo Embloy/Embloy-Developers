@@ -85,12 +85,9 @@ from embloy_sdk import EmbloyClient
 
 # Replace with your actual values
 client_token = 'your_client_token'
-session = {
-    'mode': 'job',
-    'job_slug': 'your_job_slug',
-    'success_url': 'your_success_url',
-    'cancel_url': 'your_cancel_url'
-}
+
+options = SessionOptions('your_success_url', 'your_cancel_url') # SessionOptions are optional and can be left out
+session = EmbloySession('your-mode', 'your_job_slug', options)
 
 # Create an instance of the EmbloyClient
 embloy_client = EmbloyClient(client_token, session)
