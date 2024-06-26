@@ -144,7 +144,7 @@ try {
   - https://mvnrepository.com/artifact/com.embloy/sdk or
   - https://github.com/embloy/embloy-java/releases/latest
 */
-implementation "com.embloy:sdk:0.1.6"
+implementation "com.embloy:sdk:0.1.7"
 ```
 
 ```Java title="build.gradle.kts"
@@ -154,7 +154,7 @@ implementation "com.embloy:sdk:0.1.6"
   - https://mvnrepository.com/artifact/com.embloy/sdk or
   - https://github.com/embloy/embloy-java/releases/latest
 */
-implementation("com.embloy:sdk:0.1.6")
+implementation("com.embloy:sdk:0.1.7")
 ```
 
 ```XML title="pom.xml"
@@ -167,7 +167,7 @@ implementation("com.embloy:sdk:0.1.6")
 <dependency>
     <groupId>com.embloy</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.1.6</version>
+    <version>0.1.7</version>
 </dependency>
 ```
 
@@ -180,13 +180,23 @@ public class ExampleClass {
         // Replace these values with your actual client token and session data
         String clientToken = "your-client-token";
 
-        EmbloySession session = new EmbloySession(EmbloySession.EmbloyRequestMode.JOB_MODE, "your-job-slug", "your-success-url", "your-cancel-url");
+        // Example of using a preset value directly from EmbloyRequestMode enum (e.g., JOB_MODE, ASHBY_MODE, LEVER_MODE, etc.)
+        // These presets correspond to different Applicant Tracking Systems (ATS) supported by Embloy.
+        EmbloyRequestMode modePreset = EmbloyRequestMode.JOB_MODE;
+        
+        // Alternatively, you can dynamically determine the mode by passing a string value to fromValue method.
+        // This is useful when the mode is not known at compile time or is configured externally.
+        // Throws IllegalArgumentException if the value does not match any supported mode.
+        EmbloyRequestMode customMode = EmbloyRequestMode.fromValue("your-custom-ats");
+
+        // Choose between modePreset or customMode based on your use case
+        EmbloySession session = new EmbloySession(modePreset, "your-job-slug", "your-success-url", "your-cancel-url");
 
         EmbloyClient embloyClient = new EmbloyClient(clientToken, session);
 
         try {
             String applyUrl = embloyClient.makeRequest();
-            System.out.println("Redirect URL: " + applyUrl);
+            // Redirect user to applyUrl
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
