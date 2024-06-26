@@ -24,11 +24,11 @@ Embloy's server-side helper libraries (also known as server-side SDKs) reduce th
   defaultValue="ruby"
   values={[
     {label: 'Ruby', value: 'ruby'},
+    {label: 'Go', value: 'go'},
     {label: 'Python', value: 'python'},
     {label: 'PHP', value: 'php'},
     {label: 'Java', value: 'java'},
     {label: 'Node', value: 'node'},
-    {label: 'Go', value: 'go'},
   ]}>
 <!--    {label: '.NET', value: 'dotnet'},-->
 
@@ -61,9 +61,64 @@ redirect_to redirect_url
 
 </TabItem>
 
+<!--------------------------------------------- GO SDK ----------------------------------------------->
+
+<TabItem value="go">
+
+```bash title="Command Line"
+# Make sure your project is using Go Modules
+go mod init
+# Install embloy-go
+go get -u github.com/embloy/embloy-go/embloy
+```
+
+```Go title="app.go"
+// Then import the package
+import (
+  "github.com/embloy/embloy-go/embloy"
+)
+```
+
+```go title="your-example-service.go"
+import (
+  "fmt"
+  "net/http"
+
+  "github.com/gin-gonic/gin"
+  "github.com/embloy/embloy-go/embloy"
+)
+
+func yourExampleEndpoint(c *gin.Context) {
+  // Call Embloy-Go SDK to get a request_token
+  sessionData := embloy.SessionData{
+    Mode:       "job",
+    SuccessURL: "your-success-url",
+    CancelURL:  "your-cancel-url",
+    JobSlug:    jobSlug,
+  }
+  client := embloy.NewEmbloyClient("your-client-token", sessionData)
+
+  redirectURL, err := client.MakeRequest()
+  if err != nil {
+    fmt.Println("Error:", err)
+    return
+  }
+
+  // Redirect to the Embloy application portal
+  c.Redirect(http.StatusFound, redirectURL)
+}
+```
+
+</TabItem>
+
 <!--------------------------------------------- PYTHON SDK ----------------------------------------------->
 
 <TabItem value="python">
+
+:::warning
+Currently, the Python SDK may encounter 403 Errors due to CORS issues. Efforts are underway to resolve this problem.
+:::
+
 ```bash title="Command Line"
 # Install through pip
 pip3 install --upgrade embloy_sdk
@@ -101,6 +156,10 @@ redirect_url = embloy_client.make_request()
 <!--------------------------------------------- PHP SDK ----------------------------------------------->
 
 <TabItem value="php">
+
+:::warning
+Currently, the PHP SDK may encounter 403 Errors due to CORS issues. Efforts are underway to resolve this problem.
+:::
 
 ```bash title="Command Line"
 # Install the PHP library with Composer
@@ -231,56 +290,6 @@ embloy.makeRequest()
 
 </TabItem>
 
-<!--------------------------------------------- GO SDK ----------------------------------------------->
-
-<TabItem value="go">
-
-```bash title="Command Line"
-# Make sure your project is using Go Modules
-go mod init
-# Install embloy-go
-go get -u github.com/embloy/embloy-go/embloy
-```
-
-```Go title="app.go"
-// Then import the package
-import (
-  "github.com/embloy/embloy-go/embloy"
-)
-```
-
-```go title="your-example-service.go"
-import (
-  "fmt"
-  "net/http"
-
-  "github.com/gin-gonic/gin"
-  "github.com/embloy/embloy-go/embloy"
-)
-
-func yourExampleEndpoint(c *gin.Context) {
-  // Call Embloy-Go SDK to get a request_token
-  sessionData := embloy.SessionData{
-    Mode:       "job",
-    SuccessURL: "your-success-url",
-    CancelURL:  "your-cancel-url",
-    JobSlug:    jobSlug,
-  }
-  client := embloy.NewEmbloyClient("your-client-token", sessionData)
-
-  redirectURL, err := client.MakeRequest()
-  if err != nil {
-    fmt.Println("Error:", err)
-    return
-  }
-
-  // Redirect to the Embloy application portal
-  c.Redirect(http.StatusFound, redirectURL)
-}
-```
-
-</TabItem>
-
 <!--------------------------------------------- DOTNET SDK ----------------------------------------------->
 
 <!--
@@ -304,7 +313,7 @@ func yourExampleEndpoint(c *gin.Context) {
 </Tabs>
 
 :::note
-Please note that all SDKs are currently in the beta phase. While they have been thoroughly tested, we recommend using them with care. The Ruby, Python, Go and Node SDKs, in particular, have undergone extensive field testing and are expected to perform reliably.
+Please note that all SDKs are currently in the beta phase. While they have been thoroughly tested, we recommend using them with care. The Ruby, Java, Go and Node SDKs, in particular, have undergone extensive field testing and are expected to perform reliably.
 :::
 
 You can access certain Embloy products and features in the beta stage with beta SDKs. The versions of these beta SDKs have the beta or b suffix, for example, 0.3.23b0 in Python and 0.1.0-beta.3 in other language SDKs. Try these beta SDKs and share feedback with us before the features reach the stable phase. To learn more about how to use the beta SDKs, read the README file in the GitHub repository of the individual language SDKs.
