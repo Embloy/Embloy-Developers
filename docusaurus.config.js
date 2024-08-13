@@ -212,7 +212,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} • Embloy Platforms GbR.`,
+        copyright: `©${new Date().getFullYear()} • Embloy Platforms UG (haftungsbeschränkt).`,
       },
       prism: {
         theme: prismThemes.github,

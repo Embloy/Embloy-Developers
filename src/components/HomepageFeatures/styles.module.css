@@ -3,6 +3,34 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  padding-bottom: 3rem;
+  background-color: var(--hero-banner-bg-color-dark);
+}
+
+[data-theme='light'] .features {
+  background-color: var(--hero-banner-bg-color-light);
+}
+
+.featureContainer {
+  background-color: #201a2d;
+  border: 1px solid #6A529B;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .featureContainer {
+  background-color: #f6f8fa;
+  border: 1px solid #6A529B;
+}
+
+.featureContainer:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+[data-theme='light'] .featureContainer:hover {
+  box-shadow: 0 8px 16px #6a529b59;
 }
 
 .featureSvg {

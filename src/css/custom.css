@@ -17,7 +17,7 @@
   --ifm-code-font-size: 85%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --hero-banner-color-dark: white;
-  --hero-banner-bg-color-dark: #16141f;
+  --hero-banner-bg-color-dark: #110e1b;
   --hero-banner-color-light: #242526;
   --hero-banner-bg-color-light: white;
   --hero-button-color-dark: white;
@@ -36,8 +36,8 @@
 }
 
 html[data-theme='dark'] {
-  --ifm-background-color: #191920;
-  --ifm-background-surface-color: #16141f;
+  --ifm-background-color: #161620;
+  --ifm-background-surface-color: #110e1b;
 }
 
 .card-light {
