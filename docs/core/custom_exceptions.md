@@ -57,6 +57,8 @@ You should only expect the following subclasses of `::InvalidInput`
   - `::Request` Related to request tokens
     - `::Blank`
     - `::Malformed`
+    - `::Forbidden`
+    - `::NotFound`
   - `::Mode` Related to the requested application portal mode
     - `::Malformed`
   - `::ApiKey` Related to the connected third party API key

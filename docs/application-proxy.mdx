@@ -1,0 +1,114 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import { WebSDKRow, MobileSDKRow } from "@site/src/components";
+
+# Application Proxy
+
+The Application Proxy is designed as a simple proxy and cache node for Embloy Quicklink. It can be used to integrate Embloy without using a [Server-SDK](/docs/sdks/overview#server-side-sdks) or embedding any code on a third party site, allowing the third party to direct to a generic URL ([apply.embloy.com](https://apply.embloy.com)) which then proxies the Quicklink request by fetching a request and client token remotely.
+
+> _Using the Application Proxy, one has to simply copy and paste the original job posting's URL:_
+> 
+> ![Application Proxy Popup](/img/integrations/application-proxy.png)
+
+## Examples
+
+<Tabs
+  defaultValue="lever"
+  values={[
+    {label: 'Lever', value: 'lever'},
+    {label: 'Ashby', value: 'ashby'},
+    {label: 'Softgarden', value: 'softgarden'},
+    {label: 'GreenHouse', value: 'greenhouse'},
+    {label: 'SuccessFactors', value: 'successfactors'},
+    {label: 'WorkDayJobs', value: 'workdayjobs'},
+  ]}>
+
+<TabItem value="lever">
+### Lever Integration
+
+> Example URL: [https://apply.embloy.com/lever](https://apply.embloy.com/lever)
+
+To integrate Embloy with Lever, follow these steps:
+
+1. Navigate to [Embloy's Recruiters Dashboard](https://genius.embloy.com).
+2. Go to **Settings** > [**Integrations**](https://genius.embloy.com/settings?tab=integrations), select Lever, press _Connect_ and follow the instructions on screen.
+
+    :::warning
+    Since Lever doesn't provide a Webhook for updates of your postings' application forms, **whenever you create or edit a posting**, you will have to press _Refresh postings_ in the **Integrations** tab of Embloy's Recruiter Dashboard.
+    :::
+3. Navigate to your Lever account settings.
+
+2. Go to **Settings** \> **Integrations and API** \> **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**.
+
+3. Ensure all webhooks are active and configured to trigger on job postings and applications.
+
+    :::tip
+    If the webhooks don't appear in Lever's **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**-tab, you can reset them manually by clicking _Reset Webhooks_ in the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
+    :::
+
+
+</TabItem>
+
+<TabItem value="ashby">
+### Ashby Integration
+
+To integrate Embloy with Ashby, follow these steps:
+
+1. Navigate to your Ashby account settings.
+2. Go to the "Integrations" section and create a new Ashby API Key with all permissions
+3. Navigate to [Embloy's Recruiters Dashboard](https://genius.embloy.com).
+4. Go to **Settings** > [**Integrations**](https://genius.embloy.com/settings?tab=integrations), select Ashby, press _Connect_ and follow the instructions on screen.
+5. Ensure all webhooks are active and configured to trigger on job postings and applications.
+
+Application URL: [https://apply.embloy.com/ashby](https://apply.embloy.com/ashby)
+
+</TabItem>
+
+<TabItem value="softgarden">
+### Softgarden Integration
+
+_Coming soon ..._
+
+</TabItem>
+
+<TabItem value="greenhouse">
+### GreenHouse Integration
+
+_Coming soon ..._
+
+</TabItem>
+
+<TabItem value="successfactors">
+### SuccessFactors Integration
+
+_Coming soon ..._
+
+</TabItem>
+
+<TabItem value="workdayjobs">
+### WorkDayJobs Integration
+
+_Coming soon ..._
+
+</TabItem>
+
+</Tabs>
+
+## How It Works
+
+The Application Proxy acts as an intermediary between the job platform and Embloy. When a user clicks the "Apply with Embloy" button, the proxy handles the authentication and data transfer by fetching the necessary tokens and forwarding the application data to the appropriate job platform, allowing users to apply simply using the job posting's URL.
+
+```
+                                                  ┌─────────┐
+┌───────────────────────┐                     ┌─► │ Proxy 1 ├──┐  ┌────────┐
+│                       ├─────────────────────┘   └─────────┘  └─►│        │/sdk/request/auth/token
+│  Third party service  │GET apply.embloy.com                     │ GO SDK │         ┌──────────┐
+│   (DNS-RR/HTTP 302)   │GET apply.embloy.com                     │        │────────►│ Core-API │
+│                       ├─────────────────────┐   ┌─────────┐  ┌─►└────────┘         └──────────┘
+└───────────────────────┘                     └─► │ Proxy 2 ├──┘
+                                                  └─────────┘
+```

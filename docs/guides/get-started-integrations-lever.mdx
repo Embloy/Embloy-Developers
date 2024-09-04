@@ -1,0 +1,114 @@
+---
+sidebar_position: 5
+---
+
+# How to connect Embloy with Lever
+
+:::info
+This guide is for Embloy customers that want to integrate Embloy with a Lever.
+:::
+
+Hey there! 👋 Welcome to Embloy! We are excited to have you on board. This guide will explain every step you need to take to connect Embloy with your existing ATS.
+
+## Prerequisites
+
+- You are currently using Lever
+
+## Step 1: Create an account
+
+If you haven't already, you can create an Embloy account by visiting our [registration page](https://embloy.com/register). You can also sign up using your Google, LinkedIn, Microsoft, or GitHub accounts.
+
+After you have created an account, you will receive a confirmation email. Click on the link in the email to verify your account.
+
+_[More information](/docs/category/account)_
+
+## Step 2: Subscribe to Embloy
+
+[Choose a plan and subscribe](https://genius.embloy.com/settings?tab=billing) to Embloy. We partner up with Stripe to process payments, so you don't have to worry about us storing or processing any sensitive information.
+
+_[More information](/docs/category/subscriptions)_
+
+## Step 3: Setting up the integration
+
+:::note
+If anything is unclear, follow the instructions shown in your ATS and if necessary, see their documentation and guides.
+:::
+
+1. Navigate to [Embloy's Recruiters Dashboard](https://genius.embloy.com).
+
+<div style={{ display: "flex", justifyContent: "space-between" }}>
+  <div style={{ display: "flex flex-col", width: "90%" }}>
+    - Go to **Settings** > [**Integrations**](https://genius.embloy.com/settings?tab=integrations).
+    <!--<img
+      src={require("/img/integrations/lever/lever-oauth.png").default}
+      alt="Lever Genius OAuth"
+      style={{ marginTop: "2%", width: "100%", height: "100%" }}/>-->
+  </div>
+  <div style={{ display: "flex flex-col", width: "90%" }}>
+    - Select Lever and press _Connect_.
+    <!--<img
+      src={require("/img/integrations/lever/lever-oauth.png").default}
+      alt="Lever Accept OAuth"
+      style={{ marginTop: "2%", width: "100%", height: "100%" }}/>-->
+  </div>
+</div>
+
+2. Sign into your Lever account and then authorize Embloy by pressing _Accept_.
+![Lever Accept OAuth](/img/integrations/lever/lever-accept-oauth.png)
+
+3. To synchronize the application stage of a candidate, please enable the _Candidate stage change_, _Candidate archive state change_, _Candidate hired_, _Interview created_, _Interview updated_ and _Interview deleted_ webhooks in Lever by going to **Settings** \> **Integrations and API** \> **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**.
+    :::tip
+    If the webhooks don't appear in Lever's **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**-tab, you can reset them manually by clicking _Reset Webhooks_ in the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
+    :::
+
+    ![Lever Webhook Page](/img/integrations/lever/lever-webhooks.png)
+
+:::warning
+Since Lever doesn't provide a Webhook for updates of your postings' application forms, **whenever you create or edit a posting**, you will have to press _Refresh postings_ in the **Integrations** tab of Embloy's Recruiter Dashboard.
+:::
+
+## Step 4: Using the Embloy integration
+
+1. Navigate to **Settings** > **[Posting Templates](https://hire.lever.co/settings/site?tab=posting-templates)**.
+
+    ![Lever Webhook Page](/img/integrations/lever/lever-template.png)
+
+2. Create a new template or update an existing one with the following line that links to `https://apply.embloy.com/lever`: 
+    ```
+    APPLY WITH EMBLOY
+    ```
+   
+
+    ![Lever Webhook Page](/img/integrations/lever/lever-template-new.png)
+
+3. Save the template and use it in your job postings.
+
+4. Users should now be able to apply to your postings using their Embloy account by pressing _Apply with Embloy_.
+
+_[More information](/docs/application-proxy)_
+
+## Disabling the Embloy integration
+
+### In Embloy
+
+1. Navigate to the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
+
+2. Select Lever from the list of integrations and press _Disconnect_.
+
+### In Lever
+
+1. Navigate to **Settings** \> **Integrations and API** \> **[Authorized Apps](https://hire.sandbox.lever.co/settings/integrations?tab=authorizedApps)**.
+
+2. Select Embloy and click _Revoke Access_.
+
+_[More information](/docs/core/tokens/secrets#upload-3rd-party-api-keys)_
+
+## Conclusion
+
+### Receive applications via your ATS
+
+- Now that you have connected your ATS, applications submitted through Embloy will automatically be sent there so that you can process your applications as usual.
+
+- If you need to, you can also log into our [recruiter portal](https://genius.embloy.com/), screen the applications and respond to the candidates directly. However, if you are using Embloy as an integration and not as a standalone tool, we recommend you to manage your applications directly via your ATS.
+
+_[More information](/docs/category/manage-applications/)_
