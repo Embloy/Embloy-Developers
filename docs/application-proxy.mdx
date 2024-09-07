@@ -11,10 +11,20 @@ import { WebSDKRow, MobileSDKRow } from "@site/src/components";
 The Application Proxy is designed as a simple proxy and cache node for Embloy Quicklink. It can be used to integrate Embloy without using a [Server-SDK](/docs/sdks/overview#server-side-sdks) or embedding any code on a third party site, allowing the third party to direct to a generic URL ([apply.embloy.com](https://apply.embloy.com)) which then proxies the Quicklink request by fetching a request and client token remotely.
 
 > _Using the Application Proxy, one has to simply copy and paste the original job posting's URL:_
-> 
+>
 > ![Application Proxy Popup](/img/integrations/application-proxy.png)
 
-## Examples
+## Apply to any job
+
+You can use the Application Proxy to apply directly to a supported job by adding `apply.embloy.com` before the posting URL.
+
+The modified URL should then look like: `https://apply.embloy.com/<your-posting-url>`.
+
+For example, if your job posting URL is _jobs.example.com/123_, you can use:
+- [apply.embloy.com/jobs.example.com/123](https://apply.embloy.com/jobs.sandbox.lever.co/de/bab6e549-d980-4911-a84c-668951c0e65e)
+- [apply.embloy.com/https://jobs.example.com/123](https://apply.embloy.com/https://jobs.sandbox.lever.co/de/bab6e549-d980-4911-a84c-668951c0e65e)
+
+## ATS Examples
 
 <Tabs
   defaultValue="lever"
@@ -37,19 +47,19 @@ To integrate Embloy with Lever, follow these steps:
 1. Navigate to [Embloy's Recruiters Dashboard](https://genius.embloy.com).
 2. Go to **Settings** > [**Integrations**](https://genius.embloy.com/settings?tab=integrations), select Lever, press _Connect_ and follow the instructions on screen.
 
-    :::warning
-    Since Lever doesn't provide a Webhook for updates of your postings' application forms, **whenever you create or edit a posting**, you will have to press _Refresh postings_ in the **Integrations** tab of Embloy's Recruiter Dashboard.
-    :::
+   :::warning
+   Since Lever doesn't provide a Webhook for updates of your postings' application forms, **whenever you create or edit a posting**, you will have to press _Refresh postings_ in the **Integrations** tab of Embloy's Recruiter Dashboard.
+   :::
+
 3. Navigate to your Lever account settings.
 
-2. Go to **Settings** \> **Integrations and API** \> **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**.
+4. Go to **Settings** \> **Integrations and API** \> **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**.
 
-3. Ensure all webhooks are active and configured to trigger on job postings and applications.
+5. Ensure all webhooks are active and configured to trigger on job postings and applications.
 
-    :::tip
-    If the webhooks don't appear in Lever's **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**-tab, you can reset them manually by clicking _Reset Webhooks_ in the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
-    :::
-
+   :::tip
+   If the webhooks don't appear in Lever's **[Webhooks](https://hire.sandbox.lever.co/settings/integrations?tab=webhooks)**-tab, you can reset them manually by clicking _Reset Webhooks_ in the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
+   :::
 
 </TabItem>
 
