@@ -13,7 +13,11 @@ From the job-provider side, to verify the account and access special features, t
 - **Embloy-Genius: 500.00 EUR/month**
 
 :::tip
-Subscriptions are by default on a monthly basis but can be customized to be dependent on API use. 
+Subscriptions are by default on a monthly basis but can be customized to be dependent on API use.
 :::
 
 Embloy partners with Stripe for simplified billing.
+
+:::note
+Sandbox users cannot perform any subscription-related actions (such as creating a new subscription or managing billing information). They only have access to a limited set of features.
+:::
