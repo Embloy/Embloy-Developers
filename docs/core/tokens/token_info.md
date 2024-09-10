@@ -23,7 +23,7 @@ For more information, see [this endpoint](https://www.postman.com/embloy/workspa
 
 ## Access token
 
-> Validity: **20 MINUTES** - see [**_Example access token_**](https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcxODMyMjg2NSwidHlwIjoidmVyaWZpZWQiLCJzY29wZSI6ImFwaS5lbWJsb3kuY29tL2FwaS5yZWFkIiwiaXNzIjoiYXBpLmVtYmxveS5jb20ifQ.uSrpVsqOTksmYZ5l5srSbq6o3CxtpiSXWYjVxpO_0ls)
+> Validity: **20 MINUTES** - see [**_Example access token_**](eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEzLCJleHAiOjE3MjU5NTE2NjYsInR5cCI6InZlcmlmaWVkIiwibW9kIjoidXNlcl9wcml2YXRlIiwic2NvcGUiOiJodHRwczovL2FwaS5lbWJsb3kuY29tL2FwaS53cml0ZSIsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.gfguxtjLythNNMuX5BKv30SX4blin1v8OAt_u2ATlGQ)
 
 Access tokens are used as the main method of authentication for all Embloy services. Access tokens can be generated using a valid refresh token and are only valid for their defined scope.
 
