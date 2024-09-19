@@ -10,9 +10,13 @@ This guide is for Embloy customers that want to use Embloy with their [Lever ATS
 
 Hey there! 👋 Welcome to Embloy! We are excited to have you on board. This guide will explain every step you need to take to connect Embloy with Lever.
 
+---
+
 ## Prerequisites
 
 - You are currently using [Lever](https://lever.co)
+
+---
 
 ## Step 1: Create an account
 
@@ -22,14 +26,17 @@ After you have created an account, you will receive a confirmation email. Click 
 
 _[More information](/docs/category/account)_
 
+---
+
 ## Step 2: Subscribe to Embloy
 
 [Choose a plan and subscribe](https://genius.embloy.com/settings?tab=billing) to Embloy. We partner up with Stripe to process payments, so you don't have to worry about us storing or processing any sensitive information.
 
 _[More information](/docs/category/subscriptions)_
 
-## Step 3: Set up the integration
+---
 
+## Step 3: Set up the integration
 
 1. Navigate to [Embloy's Recruiters Dashboard](https://genius.embloy.com).
     - Go to **Settings** > [**Integrations**](https://genius.embloy.com/settings?tab=integrations).
@@ -54,30 +61,58 @@ Since Lever doesn’t provide a webhook for updates of your postings’ applicat
 Whenever you create or edit a posting, and you don’t want to wait for it to re-synchronize automatically, you can trigger this manually by pressing the ‘Refresh postings’-icon in the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy’s Recruiter Dashboard.
 :::
 
-## Step 4: Using the Embloy integration
+## Step 4: Adding 'Apply with Embloy' to your Job Postings
+
+Let candidates know they can use Embloy to apply for your jobs! Update your templates and your existing postings with the following text that links to `https://apply.embloy.com/lever`: 
+> **To apply faster, use [Embloy](https://embloy.com). Just paste the URL of this page into [*apply.embloy.com/lever*](https://apply.embloy.com/lever) or add *apply.embloy.com/* before the entire URL in your browser.**
+
+    ![Lever Webhook Page](/img/integrations/lever/lever-template-content.png)
+
+_[More information](/docs/application-proxy)_
+#### Voilà, Embloy is now up and running!
+
+___
+
+## Usage
+:::tip
+Applications submitted through Embloy will include an `Embloy` tag in your Lever dashboard.
+:::
+
+- After connecting your ATS, applications submitted via Embloy will be automatically sent to Lever for your usual processing. You can respond to candidates, and they will see updates in Embloy, such as interview invitations.
+- It shouldn't be necessary but you can also access our [recruiter portal](https://genius.embloy.com/) for managing Embloy checking applications, and responding to candidates. Consider this an option for emergency or troubleshooting purposes.
+
+So in conclusion, Embloy is built to be fully operational out of Lever. Recruiting teams can continue using Lever without additional effort if candidates apply through Embloy.
+
+_[More information](/docs/category/manage-applications/)_
+
+---
+
+#### If applicable, How to create a new template in Lever:
 
 1. Navigate to **Settings** > [**Posting Templates**](https://hire.lever.co/settings/site?tab=posting-templates).
 
     ![Lever Webhook Page](/img/integrations/lever/lever-template.png)
 
 2. Create a new template or update an existing one with the following text that links to `https://apply.embloy.com/lever`: 
-    > **To speed up your application, apply with [Embloy](https://embloy.com) to this position. Simply paste the URL of this job posting into [apply.embloy.com/lever](https://apply.embloy.com/lever).**
+    > **To apply faster, use [Embloy](https://embloy.com). Just paste the URL of this page into [*apply.embloy.com/lever*](https://apply.embloy.com/lever) or add *apply.embloy.com/* before the entire URL in your browser.**
 
     ![Lever Webhook Page](/img/integrations/lever/lever-template-content.png)
 
-3. Save the template and use it in your job postings.
+3. Save the template and use it in your new job postings. Update the existing job posting templates with the text from above.
 
-4. Users should now be able to apply to your postings using their Embloy account by pressing _Apply with Embloy_.
-
-_[More information](/docs/application-proxy)_
+---
 
 ## Disabling the Embloy integration
 
 ### In Embloy
 
+:::note
+Use [Embloy's Recruiter Dashboard](https://genius.embloy.com) to follow the steps below.
+:::
+
 1. Navigate to the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
 
-2. Select Lever from the list of integrations and press _Disconnect_.
+2. Find lever in the list of integrations and hit _Disconnect_.
 
 ### In Lever
 
@@ -87,16 +122,19 @@ _[More information](/docs/application-proxy)_
 
 _[More information](/docs/core/tokens/secrets#upload-3rd-party-api-keys)_
 
-## Conclusion
+---
 
-### Receive applications via your ATS
 
-- Now that you have connected your ATS, applications submitted through Embloy will automatically be sent there so that you can process your applications as usual.
+## Help & Support
 
-:::tip
-Applications submitted through Embloy will include an `Embloy` tag in your Lever dashboard.
-:::
+For assistance with Embloy, please refer to the following resources first:
+    - Usage questions (Is Embloy for me or not?): [Scenario Study](https://developers.embloy.com/docs/core/service-comparison)
+    - [Tutorials](https://developers.embloy.com/docs/category/tutorial---basics)
+    - Account Issues: [Account Resources Section](https://developers.embloy.com/docs/category/account)
+    - Subscription Questions: [Subscription Resources Section](https://developers.embloy.com/docs/category/subscriptions)
+    - API Key, Token, or Secrets Issues: [Token and Secrets Section](https://developers.embloy.com/docs/category/tokens-and-secrets)
+    - [Candidate Functionality Questions](https://developers.embloy.com/docs/category/core)
+    - Service Status: Check [Embloy Status](https://status.embloy.com) for updates on technical services, uptime, and outages. Planned maintancance will also be reported there.
 
-- If you need to, you can also log into our [recruiter portal](https://genius.embloy.com/), screen the applications and respond to the candidates directly. However, if you are using Embloy as an integration and not as a standalone tool, we recommend you to manage your applications directly via your ATS.
+For further assistance, contact us at [help@embloy.com](mailto:help@embloy.com). Our office hours are 10 AM - 10 PM CET (Europe/Berlin).
 
-_[More information](/docs/category/manage-applications/)_

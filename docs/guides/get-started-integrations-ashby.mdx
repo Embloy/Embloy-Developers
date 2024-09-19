@@ -22,15 +22,21 @@ After you signed up, you will receive a confirmation email. Verify your new Embl
 
 _[More information](/docs/category/account)_
 
+---
+
 ## Step 2: Subscribe to Embloy
 
 [Choose a plan and subscribe](https://genius.embloy.com/settings?tab=billing) to Embloy. We partner up with Stripe to process payments, so you don't have to worry about us storing or processing any sensitive information.
 
 _[More information](/docs/category/subscriptions)_
 
+---
+
 ## Step 3: Set up the integration
 
-1. **In Ashby** Navigate to the [Integration API Keys page](https://app.ashbyhq.com/admin/api/keys?step=3).
+### In Ashby
+
+1. Navigate to the [Integration API Keys page](https://app.ashbyhq.com/admin/api/keys?step=3).
     - Create a new API Key. You need to label it, you could label it as 'Embloy Integration Key'. You don't need to specify an Integration Partner but you could specify 'Embloy Platforms'
     - Activate the following modules:
         |Module | Read? | Write? |
@@ -45,7 +51,13 @@ _[More information](/docs/category/subscriptions)_
         |Approvals | No | No    |
     - Hit 'Save and Continue' and copy the generated token to your clipboard
 
-2. **In Embloy Genius:** Navigate to the ['Secrets' Settings page](https://genius.embloy.com/settings?tab=secrets).
+### In Embloy
+
+:::info
+Use [Embloy's Recruiter Dashboard](https://genius.embloy.com) to follow the steps below.
+:::
+
+1. Navigate to the ['Secrets' Settings page](https://genius.embloy.com/settings?tab=secrets).
     - Add a new secret with the following parameters:
         - _Secret Name_: Your choice, we suggest something like 'Ashby Integration Key'
         - _Secret Issuer_: Select 'Ashby'
@@ -53,57 +65,67 @@ _[More information](/docs/category/subscriptions)_
         - _Secret Expiration_: Should be left empty
         - _Secret Content_: Paste the token from your clipboard
     - Hit 'Save'. This will automatically connect Ashby with Embloy
-3. **In Embloy Genius:** Navigate to the ['Integrations' Settings page](https://genius.embloy.com/settings?tab=integrations).
+2. Navigate to the ['Integrations' Settings page](https://genius.embloy.com/settings?tab=integrations).
     - Verify that the the Ashby Integration is shown as active
     - Hit 'Synchronize'
     - Hit '(Re)set Webhooks'
-4. **That's it!**
-    Embloy is now connected to your Ashby ATS. You can now do your usual business in Ashby and Embloy will automatically be up to date!
 
+_[More information](/docs/category/manage-applications/)_
+---
 
-## Step 4: Using the Embloy integration
+## Step 4: Add 'Apply with Embloy' to your Job Postings
 
-1. Navigate to **Settings** > [**Posting Templates**](https://hire.lever.co/settings/site?tab=posting-templates).
-
-    ![Lever Webhook Page](/img/integrations/lever/lever-template.png)
-
-2. Create a new template or update an existing one with the following text that links to `https://apply.embloy.com/lever`: 
-    > **To speed up your application, apply with [Embloy](https://embloy.com) to this position. Simply paste the URL of this job posting into [apply.embloy.com/lever](https://apply.embloy.com/lever).**
+Let candidates know they can use Embloy to apply for your jobs! Update your templates and your existing postings with the following text that links to `https://apply.embloy.com/ashby`: 
+> **To apply faster, use [Embloy](https://embloy.com). Just paste the URL of this page into [*apply.embloy.com/ashby*](https://apply.embloy.com/ashby) or add *apply.embloy.com/* before the entire URL in your browser.**
 
     ![Lever Webhook Page](/img/integrations/lever/lever-template-content.png)
 
-3. Save the template and use it in your job postings.
-
-4. Users should now be able to apply to your postings using their Embloy account by pressing _Apply with Embloy_.
-
 _[More information](/docs/application-proxy)_
+#### Voilà, Embloy is now up and running!
+
+---
+
+## Usage
+
+- After connecting your ATS, applications submitted via Embloy will be automatically sent to Ashby for your usual processing. You can respond to candidates, and they will see updates in Embloy, such as interview invitations.
+- It shouldn't be necessary but you can also access our [recruiter portal](https://genius.embloy.com/) for managing Embloy checking applications, and responding to candidates. Consider this an option for emergency or troubleshooting purposes.
+
+So in conclusion, Embloy is built to be fully operational out of Ashby. Recruiting teams can continue using Ashby without additional effort if candidates apply through Embloy.
+
+_[More information](/docs/category/manage-applications/)_
+
+---
 
 ## Disabling the Embloy integration
 
 ### In Embloy
 
-1. Navigate to the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
-
-2. Select Lever from the list of integrations and press _Disconnect_.
-
-### In Lever
-
-1. Navigate to **Settings** \> **Integrations and API** \> **[Authorized Apps](https://hire.lever.co/settings/integrations?tab=authorizedApps)**.
-
-2. Select Embloy and click _Revoke Access_.
-
-_[More information](/docs/core/tokens/secrets#upload-3rd-party-api-keys)_
-
-## Conclusion
-
-### Receive applications via your ATS
-
-- Now that you have connected your ATS, applications submitted through Embloy will automatically be sent there so that you can process your applications as usual.
-
-:::tip
-Applications submitted through Embloy will include an `Embloy` tag in your Lever dashboard.
+:::info
+Use [Embloy's Recruiter Dashboard](https://genius.embloy.com) to follow the steps below.
 :::
 
-- If you need to, you can also log into our [recruiter portal](https://genius.embloy.com/), screen the applications and respond to the candidates directly. However, if you are using Embloy as an integration and not as a standalone tool, we recommend you to manage your applications directly via your ATS.
+1. Navigate to the [**Integrations**](https://genius.embloy.com/settings?tab=integrations)-tab of Embloy's Recruiter Dashboard.
 
-_[More information](/docs/category/manage-applications/)_
+2. Find Ashby in the list of integrations and hit _Disconnect_.
+
+### In Ashby
+
+1. Navigate to the [Integration API Keys page](https://app.ashbyhq.com/admin/api/keys?step=3).
+
+2. Find the API Key that you set for Embloy and disable it. Please note that you cannot re-enable a disabled API Key in Ashby.
+
+---
+
+## Help & Support
+
+For assistance with Embloy, please refer to the following resources first:
+    - Usage questions (Is Embloy for me or not?): [Scenario Study](https://developers.embloy.com/docs/core/service-comparison)
+    - [Tutorials](https://developers.embloy.com/docs/category/tutorial---basics)
+    - Account Issues: [Account Resources Section](https://developers.embloy.com/docs/category/account)
+    - Subscription Questions: [Subscription Resources Section](https://developers.embloy.com/docs/category/subscriptions)
+    - API Key, Token, or Secrets Issues: [Token and Secrets Section](https://developers.embloy.com/docs/category/tokens-and-secrets)
+    - [Candidate Functionality Questions](https://developers.embloy.com/docs/category/core)
+    - Service Status: Check [Embloy Status](https://status.embloy.com) for updates on technical services, uptime, and outages. Planned maintancance will also be reported there.
+
+For further assistance, contact us at [help@embloy.com](mailto:help@embloy.com). Our office hours are 10 AM - 10 PM CET (Europe/Berlin).
+
