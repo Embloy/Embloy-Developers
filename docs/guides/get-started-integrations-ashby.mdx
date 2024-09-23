@@ -38,17 +38,9 @@ _[More information](/docs/category/subscriptions)_
 
 1. Navigate to the [Integration API Keys page](https://app.ashbyhq.com/admin/api/keys?step=3).
     - Create a new API Key. You need to label it, you could label it as 'Embloy Integration Key'. You don't need to specify an Integration Partner but you could specify 'Embloy Platforms'
+        ![Ashby Create Key](/img/integrations/ashby/ashby-1.png)
     - Activate the following modules:
-        |Module | Read? | Write? |
-        | -------- | -------- | ------- |
-        |Jobs | Yes | No    |
-        |Candidates | Yes | Yes    |
-        |Interviews | Yes | No    |
-        |Hiring Process Metadata | Yes | No    |
-        |Organization | Yes | No    |
-        |Offers | Yes | No    |
-        |API Keys | No | No    |
-        |Approvals | No | No    |
+        ![Ashby Key Settings](/img/integrations/ashby/ashby-2.png)
     - Hit 'Save and Continue' and copy the generated token to your clipboard
 
 ### In Embloy
@@ -65,20 +57,30 @@ Use [Embloy's Recruiter Dashboard](https://genius.embloy.com) to follow the step
         - _Secret Expiration_: Should be left empty
         - _Secret Content_: Paste the token from your clipboard
     - Hit 'Save'. This will automatically connect Ashby with Embloy
-2. Navigate to the ['Integrations' Settings page](https://genius.embloy.com/settings?tab=integrations).
+    ![Embloy Create Key](/img/integrations/ashby/ashby-3.png)
+2. Confirm the Secret is set correctly:
+    - In the filter input, enter the name of the secret you previously created
+    - Ensure the displayed secret meets these criteria: A) Status is "Active" B) Type is "API Key" and C) Issued by "Ashby"
+    - If any of these conditions are not met, select the secret and click "Delete Token(s)" in the toolbar.
+    ![Embloy Check Key](/img/integrations/ashby/ashby-4.png)
+
+    
+3. Navigate to the ['Integrations' Settings page](https://genius.embloy.com/settings?tab=integrations).
     - Verify that the the Ashby Integration is shown as active
     - Hit 'Synchronize'
     - Hit '(Re)set Webhooks'
+    ![Embloy Set & Sync](/img/integrations/ashby/ashby-5.png)
 
 _[More information](/docs/category/manage-applications/)_
+
 ---
 
 ## Step 4: Add 'Apply with Embloy' to your Job Postings
 
-Let candidates know they can use Embloy to apply for your jobs! Update your templates and your existing postings with the following text that links to `https://apply.embloy.com/ashby`: 
+Let candidates know they can use Embloy to apply for your jobs! Update your [job templates](https://app.ashbyhq.com/jobs/templates) and your existing [job postings](https://app.ashbyhq.com/jobs/all) with the following text that links to `https://apply.embloy.com/ashby`: 
 > **To apply faster, use [Embloy](https://embloy.com). Just paste the URL of this page into [*apply.embloy.com/ashby*](https://apply.embloy.com/ashby) or add *apply.embloy.com/* before the entire URL in your browser.**
 
-
+![Ashby Update posing](/img/integrations/ashby/ashby-6.png)
 _[More information](/docs/application-proxy)_
 #### Voilà, Embloy is now up and running!
 
@@ -122,7 +124,7 @@ For assistance with Embloy, please refer to the following resources first:
     - [Tutorials](https://developers.embloy.com/docs/category/tutorial---basics)
     - Account Issues: [Account Resources Section](https://developers.embloy.com/docs/category/account)
     - Subscription Questions: [Subscription Resources Section](https://developers.embloy.com/docs/category/subscriptions)
-    - API Key, Token, or Secrets Issues: [Token and Secrets Section](https://developers.embloy.com/docs/category/tokens-and-secrets)
+    - API Key, Token, or Secrets Issues: [Token and Secrets Resources Section](https://developers.embloy.com/docs/category/tokens-and-secrets)
     - [Candidate Functionality Questions](https://developers.embloy.com/docs/category/core)
     - Service Status: Check [Embloy Status](https://status.embloy.com) for updates on technical services, uptime, and outages. Planned maintancance will also be reported there.
 
