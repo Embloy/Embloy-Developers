@@ -28,8 +28,6 @@ Setting up webhooks is simple:
 2. Add your endpoint URL and select the events you want to subscribe to.
 3. Test your webhook with our built-in simulator.
 
-For more details, check out our [webhook documentation](/docs/integrations/custom-webhooks).
-
 ## Security & Reliability
 
 All webhook payloads are signed and delivered over HTTPS. You can monitor delivery status and retry failed events from your dashboard.

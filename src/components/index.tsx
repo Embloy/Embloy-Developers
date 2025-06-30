@@ -15,7 +15,7 @@ import '../css/custom.css';
 const WebSDKs = [
   {
     name: 'React Embloy.js',
-    url: '/docs/sdks/web_sdks/react',
+    url: '/',
     description: (
       <Translate>
         📦 REACT NATIVE
@@ -24,7 +24,7 @@ const WebSDKs = [
   },
   {
     name: 'ES Module Embloy.js',
-    url: '/docs/sdks/web_sdks/es_module',
+    url: '/',
     description: (
       <Translate>
         📦 HTML · JavaScript 

@@ -24,6 +24,6 @@ Embloy integrates with popular ATS platforms. Connect Embloy to your ATS and let
 
 ## Get Started
 
-Integrate Embloy with less than 10 lines of code using our SDKs, or connect to your ATS via Embloy Genius. Check out our [5min Quickstart](/docs/quickstart) and [Developer Guides](/docs/category/guides) to get up and running.
+Integrate Embloy with less than 10 lines of code using our SDKs, or connect to your ATS via Embloy Genius. Check out our [5min Quickstart](/docs/intro) and [Developer Guides](/docs/category/guides) to get up and running.
 
 Embloy. One Click Away.
